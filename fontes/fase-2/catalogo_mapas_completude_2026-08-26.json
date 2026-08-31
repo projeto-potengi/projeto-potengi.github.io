@@ -1,0 +1,996 @@
+{
+  "version": "2026-08-26",
+  "scope": "Completude cartográfica publicável do Portal e WebGIS do Projeto Rio Potengi",
+  "methodNote": "Consolida produtos cartográficos localizados nas fontes oficiais. Não transforma versões técnicas ou arquivos auxiliares em produtos distintos; variantes são registradas como alternates. Relação com WebGIS só é marcada como disponível/prioritária quando já sustentada pelas fontes do projeto.",
+  "counts": {
+    "totalEntries": 61,
+    "meta1": 22,
+    "meta3CriticalPlates": 9,
+    "meta4": 2,
+    "meta6": 28,
+    "newlyAddedVsFase2": 27
+  },
+  "items": [
+    {
+      "id": "vulnerabilidade-erosao",
+      "title": "Mapa de Vulnerabilidade à Erosão da Bacia Hidrográfica do Rio Potengi",
+      "meta": [
+        1,
+        3
+      ],
+      "theme": "vulnerabilidade ambiental",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1Z4IkkA8cdIiJpOWu9uhkwVy0uJD8SeTl/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1Z4IkkA8cdIiJpOWu9uhkwVy0uJD8SeTl/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1TnGDb7MdYl_ES5G0xqBOigmKZy-hx2gu/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "camada_prioritaria",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "areas-prioritarias",
+      "title": "Áreas prioritárias para recuperação",
+      "meta": [
+        1,
+        3,
+        4
+      ],
+      "theme": "áreas prioritárias",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1ErnPuZk_OkLOTLWLh47HTuMA9DZsPtNW/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1ErnPuZk_OkLOTLWLh47HTuMA9DZsPtNW/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1DJjx58Kgj51foC73IBmed2LOMnFvdsA6/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "camada_prioritaria",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "uso-cobertura-terra",
+      "title": "Uso e cobertura da terra",
+      "meta": [
+        1
+      ],
+      "theme": "uso e cobertura da terra",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1g440xmMEy_9JIu416speLRpFTwJL1FND/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1g440xmMEy_9JIu416speLRpFTwJL1FND/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/11_HSD4JmERpk0vEc6Ax7e3u9m7VbQ1zP/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "camada_prioritaria",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "localizacao-bacia",
+      "title": "Localização da Bacia Hidrográfica do Rio Potengi",
+      "meta": [
+        1
+      ],
+      "theme": "localização e abrangência",
+      "territory": "Rio Grande do Norte",
+      "sourceUrl": "https://drive.google.com/file/d/19L5zpodANUhIILzZQW9lwxa0thFYM70t/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/19L5zpodANUhIILzZQW9lwxa0thFYM70t/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/10xA10Adi1OFZSymKwN3Z6TU0dUZZDgNm/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "camada_disponivel",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "rede-drenagem",
+      "title": "Rede de drenagem da Bacia do Rio Potengi",
+      "meta": [
+        1
+      ],
+      "theme": "hidrografia",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1isaiX82sisexD5NLNOJQSzKZARwaINf3/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1isaiX82sisexD5NLNOJQSzKZARwaINf3/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1_lr91US904Im8KPFRJPbZFre3Tb_-qbd/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "camada_disponivel",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "apps-alto-curso",
+      "title": "Áreas de Preservação Permanente — alto curso",
+      "meta": [
+        1
+      ],
+      "theme": "áreas de preservação permanente",
+      "territory": "Alto curso do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1ez2SjiOouE0-81yDzxIIQKDSo1oqjo7q/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1ez2SjiOouE0-81yDzxIIQKDSo1oqjo7q/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1RgUZIGz1WzXEh6Z3vbsMFPeO5eprqDDj/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "camada_parcial",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "apps-medio-curso",
+      "title": "Áreas de Preservação Permanente — médio curso",
+      "meta": [
+        1
+      ],
+      "theme": "áreas de preservação permanente",
+      "territory": "Médio curso do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1_hwhoKFsa1YYplx3NVnxpreS7D8VefDI/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1_hwhoKFsa1YYplx3NVnxpreS7D8VefDI/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1ADsZDbKkbXaNVFv7_lfCTitJRyN-aofu/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "camada_parcial",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "apps-baixo-curso",
+      "title": "Áreas de Preservação Permanente — baixo curso",
+      "meta": [
+        1
+      ],
+      "theme": "áreas de preservação permanente",
+      "territory": "Baixo curso do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1QmWN4FbxLakwfuUEh2Em44mBsagAiHaZ/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1QmWN4FbxLakwfuUEh2Em44mBsagAiHaZ/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/195hr8xQGbQe0zo8gmBn6pbttUlTorhD5/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "camada_parcial",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "modelo-digital-elevacao",
+      "title": "Modelo Digital de Elevação",
+      "meta": [
+        1
+      ],
+      "theme": "relevo",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1K8Du2IC9e_Mz2uHTiriyTIZJbIHMM3M2/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1K8Du2IC9e_Mz2uHTiriyTIZJbIHMM3M2/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1UERI0zmK1d6hIU-drRZUJgXvRgeJr_xr/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "contexto_tecnico",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "declividade",
+      "title": "Declividade",
+      "meta": [
+        1
+      ],
+      "theme": "relevo",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1uAJLre-sKj5WBwwoSZauO1oVyNiMAo95/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1uAJLre-sKj5WBwwoSZauO1oVyNiMAo95/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1N9JRwn3mfS6w7M416O2AopkDq3h2LOJS/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "contexto_tecnico",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "pedologia",
+      "title": "Pedologia",
+      "meta": [
+        1
+      ],
+      "theme": "solos",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1lQishRG7YyZADBYj6EPDASyhbCKaaYoE/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1lQishRG7YyZADBYj6EPDASyhbCKaaYoE/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1MP5cuKwsfIkvbbBINHAQYopUngJW2ewU/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "contexto_tecnico",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "geomorfologia",
+      "title": "Geomorfologia",
+      "meta": [
+        1
+      ],
+      "theme": "geomorfologia",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1m0JcouwPOMuPXcZ0FSzGhbCV_fAsPq6e/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1m0JcouwPOMuPXcZ0FSzGhbCV_fAsPq6e/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/19o_2A9Q6kYCePn1AtsxQqB6ythdh-6fI/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "contexto_tecnico",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "aquiferos",
+      "title": "Aquíferos",
+      "meta": [
+        1
+      ],
+      "theme": "hidrogeologia",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1y-REILjpVCoyks45nvjuW2yORPwZSg0j/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1y-REILjpVCoyks45nvjuW2yORPwZSg0j/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/11Pyw5O4dwD5YWaadZKBwQOsZ-6wElcRw/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "contexto_tecnico",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "apps-declividade",
+      "title": "APPs por declividade",
+      "meta": [
+        1
+      ],
+      "theme": "áreas de preservação permanente",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/13EUMpdQ_-qTLVYes6qObTSMdSFCq0DpE/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/13EUMpdQ_-qTLVYes6qObTSMdSFCq0DpE/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/16C3PYf-KJMwYL0oZbdsyn4LKQfSQ6cYk/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "contexto_tecnico",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "apps-massas-agua-1",
+      "title": "APPs de massas d’água — prancha 1",
+      "meta": [
+        1
+      ],
+      "theme": "áreas de preservação permanente",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/11kfa6kpftF7VLPFZpQBvDnFshf3MGt4-/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/11kfa6kpftF7VLPFZpQBvDnFshf3MGt4-/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1hpKlZ-tOFN0aqng0A8JdClcN6RopU7s8/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "contexto_tecnico",
+      "note": "Título público normalizado a partir do arquivo MAPA_APP_MASSAS_20HA.",
+      "alternateUrls": []
+    },
+    {
+      "id": "apps-massas-agua-2",
+      "title": "APPs de massas d’água — prancha 2",
+      "meta": [
+        1
+      ],
+      "theme": "áreas de preservação permanente",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1kddpCgLLDTDEHHIgSjyTDCwSh2mAZcjt/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1kddpCgLLDTDEHHIgSjyTDCwSh2mAZcjt/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1HkiB2tT3fTevkmirtR4hnzw3xzVzu5yJ/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "contexto_tecnico",
+      "note": "Segunda prancha localizada na pasta MAPAS APP.",
+      "alternateUrls": []
+    },
+    {
+      "id": "apps-massas-agua-3",
+      "title": "APPs de massas d’água — prancha 3",
+      "meta": [
+        1
+      ],
+      "theme": "áreas de preservação permanente",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1-Gu_mVpE_DrK3iff4mku_nr4HRMYBePr/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1-Gu_mVpE_DrK3iff4mku_nr4HRMYBePr/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1EX9TYduACNbn8UGj5exFjeJTnOB9qg7E/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "contexto_tecnico",
+      "note": "Terceira prancha localizada na pasta MAPAS APP.",
+      "alternateUrls": []
+    },
+    {
+      "id": "periodos-precipitacao",
+      "title": "Períodos de precipitação",
+      "meta": [
+        1
+      ],
+      "theme": "clima e precipitação",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1aF55w_d0FQzuE9_xJXiZs7-U920YNSNe/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1aF55w_d0FQzuE9_xJXiZs7-U920YNSNe/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/13FLvjKWcR8N6RZEaQ72mizZPZypr77oY/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "contexto_tecnico",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "precipitacao-media-anual",
+      "title": "Precipitação média anual",
+      "meta": [
+        1
+      ],
+      "theme": "clima e precipitação",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/19IO2aEQaiZch3-lEmw--V0AW0lDU1HZ6/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/19IO2aEQaiZch3-lEmw--V0AW0lDU1HZ6/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1KRLLUtlMVdBvHGpC8rKM00u6X4mHt01I/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "contexto_tecnico",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "intensidade-pluviometrica",
+      "title": "Intensidade pluviométrica",
+      "meta": [
+        1
+      ],
+      "theme": "clima e precipitação",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1KPj4-oHYW_ai5KPbfC_jDOw2sniOEeq5/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1KPj4-oHYW_ai5KPbfC_jDOw2sniOEeq5/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/13JKXeIJhC1wIx4iPZ38RMFNO13KLsb19/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "contexto_tecnico",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "vegetacao",
+      "title": "Vegetação",
+      "meta": [
+        1
+      ],
+      "theme": "vegetação",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/11Xv5O8l2fCLqLHnXvO32-B1eD4f9fXQj/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/11Xv5O8l2fCLqLHnXvO32-B1eD4f9fXQj/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1mITItTIhCpA9fl2GepdqqMTqN2L5LglF/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "contexto_tecnico",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "geologia",
+      "title": "Geologia",
+      "meta": [
+        1
+      ],
+      "theme": "geologia",
+      "territory": "Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1GJ6CeRgz-d-OXZTLuvnFmNeM3OUuwiZA/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1GJ6CeRgz-d-OXZTLuvnFmNeM3OUuwiZA/view?usp=drivesdk",
+      "downloadUrl": null,
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "contexto_tecnico",
+      "note": "Há duas versões cartográficas do mesmo tema; Geologia2.jpg é a versão visualmente mais sintética.",
+      "alternateUrls": [
+        "https://drive.google.com/file/d/1hBHwvrZVFxa0mtSUkScfwc1xDzqBP0eL/view?usp=drivesdk"
+      ]
+    },
+    {
+      "id": "area-critica-1",
+      "title": "Área crítica 1",
+      "meta": [
+        3
+      ],
+      "theme": "áreas críticas",
+      "territory": null,
+      "sourceUrl": "https://drive.google.com/file/d/1olaqjo_kqOiL-oNRAa7dwuTYxV5H2hRN/view?usp=drivesdk",
+      "previewUrl": null,
+      "downloadUrl": "https://drive.google.com/file/d/1olaqjo_kqOiL-oNRAa7dwuTYxV5H2hRN/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "vinculo_com_vulnerabilidade",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "area-critica-2",
+      "title": "Área crítica 2",
+      "meta": [
+        3
+      ],
+      "theme": "áreas críticas",
+      "territory": null,
+      "sourceUrl": "https://drive.google.com/file/d/1s4dvBX9PtX4KCFZX2zIe7wdR8e47j-X0/view?usp=drivesdk",
+      "previewUrl": null,
+      "downloadUrl": "https://drive.google.com/file/d/1s4dvBX9PtX4KCFZX2zIe7wdR8e47j-X0/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "vinculo_com_vulnerabilidade",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "area-critica-3",
+      "title": "Área crítica 3",
+      "meta": [
+        3
+      ],
+      "theme": "áreas críticas",
+      "territory": null,
+      "sourceUrl": "https://drive.google.com/file/d/1Nf0TDOughv5lZOSZG-6K7vHmalo89Hcm/view?usp=drivesdk",
+      "previewUrl": null,
+      "downloadUrl": "https://drive.google.com/file/d/1Nf0TDOughv5lZOSZG-6K7vHmalo89Hcm/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "vinculo_com_vulnerabilidade",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "area-critica-4",
+      "title": "Área crítica 4",
+      "meta": [
+        3
+      ],
+      "theme": "áreas críticas",
+      "territory": null,
+      "sourceUrl": "https://drive.google.com/file/d/17CRUM7fPhrsspuD9_ZL1lPWaD_PgyU6u/view?usp=drivesdk",
+      "previewUrl": null,
+      "downloadUrl": "https://drive.google.com/file/d/17CRUM7fPhrsspuD9_ZL1lPWaD_PgyU6u/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "vinculo_com_vulnerabilidade",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "area-critica-5",
+      "title": "Área crítica 5",
+      "meta": [
+        3
+      ],
+      "theme": "áreas críticas",
+      "territory": null,
+      "sourceUrl": "https://drive.google.com/file/d/1gikG3LkiKfIVb5b161zliVKWMANlAwtS/view?usp=drivesdk",
+      "previewUrl": null,
+      "downloadUrl": "https://drive.google.com/file/d/1gikG3LkiKfIVb5b161zliVKWMANlAwtS/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "vinculo_com_vulnerabilidade",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "area-critica-6",
+      "title": "Área crítica 6",
+      "meta": [
+        3
+      ],
+      "theme": "áreas críticas",
+      "territory": null,
+      "sourceUrl": "https://drive.google.com/file/d/1X1jhR8rkT8-sLBEP3laSFqCrjQcRK-Tz/view?usp=drivesdk",
+      "previewUrl": null,
+      "downloadUrl": "https://drive.google.com/file/d/1X1jhR8rkT8-sLBEP3laSFqCrjQcRK-Tz/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "vinculo_com_vulnerabilidade",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "area-critica-7",
+      "title": "Área crítica 7",
+      "meta": [
+        3
+      ],
+      "theme": "áreas críticas",
+      "territory": null,
+      "sourceUrl": "https://drive.google.com/file/d/1jYLbUvfKnzaFeiCWY0e2eIQOZplZxXUZ/view?usp=drivesdk",
+      "previewUrl": null,
+      "downloadUrl": "https://drive.google.com/file/d/1jYLbUvfKnzaFeiCWY0e2eIQOZplZxXUZ/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "vinculo_com_vulnerabilidade",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "area-critica-8",
+      "title": "Área crítica 8",
+      "meta": [
+        3
+      ],
+      "theme": "áreas críticas",
+      "territory": null,
+      "sourceUrl": "https://drive.google.com/file/d/1rRzI-26wFi7PtiUqACG0dNWk3NZ0qI9w/view?usp=drivesdk",
+      "previewUrl": null,
+      "downloadUrl": "https://drive.google.com/file/d/1rRzI-26wFi7PtiUqACG0dNWk3NZ0qI9w/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "vinculo_com_vulnerabilidade",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "area-critica-9",
+      "title": "Área crítica 9",
+      "meta": [
+        3
+      ],
+      "theme": "áreas críticas",
+      "territory": null,
+      "sourceUrl": "https://drive.google.com/file/d/1nIYrBQEZEnDOxJYoGp66KXpcOaRPJSx8/view?usp=drivesdk",
+      "previewUrl": null,
+      "downloadUrl": "https://drive.google.com/file/d/1nIYrBQEZEnDOxJYoGp66KXpcOaRPJSx8/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "vinculo_com_vulnerabilidade",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "cercamento-nascente-potengi",
+      "title": "Cercamento da nascente do Potengi",
+      "meta": [
+        4
+      ],
+      "theme": "recuperação ambiental",
+      "territory": "Cerro Corá",
+      "sourceUrl": "https://drive.google.com/file/d/1WRGOQgGQk7HQMvvm969jiyP1BU3XtsxW/view?usp=drivesdk",
+      "previewUrl": null,
+      "downloadUrl": "https://drive.google.com/file/d/1WRGOQgGQk7HQMvvm969jiyP1BU3XtsxW/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "camada_disponivel",
+      "note": "Fonte direta da pasta Mapas da Meta 4; há cópia equivalente em catálogo anterior.",
+      "alternateUrls": []
+    },
+    {
+      "id": "eloy-de-souza",
+      "title": "Eloy de Souza",
+      "meta": [
+        4
+      ],
+      "theme": "recuperação ambiental",
+      "territory": "Cerro Corá",
+      "sourceUrl": "https://drive.google.com/file/d/1xT2y-p63yZfQH_yBEahj-JZaYp6qSla5/view?usp=drivesdk",
+      "previewUrl": null,
+      "downloadUrl": "https://drive.google.com/file/d/1xT2y-p63yZfQH_yBEahj-JZaYp6qSla5/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "camada_parcial",
+      "note": "Fonte direta da pasta Mapas da Meta 4; título público pode ser mantido como APP do Açude Eloy de Souza.",
+      "alternateUrls": []
+    },
+    {
+      "id": "agua-sistemas-produtores-adutoras",
+      "title": "Sistemas produtores e adutoras",
+      "meta": [
+        6
+      ],
+      "theme": "abastecimento de água",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/14hnLkjeuyCkF7umCuaHs1lpy_6pQysYa/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/14hnLkjeuyCkF7umCuaHs1lpy_6pQysYa/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/14hnLkjeuyCkF7umCuaHs1lpy_6pQysYa/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "agua-tipo-manancial",
+      "title": "Tipo de manancial",
+      "meta": [
+        6
+      ],
+      "theme": "abastecimento de água",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1VYgLiHhhMNgLph9xQDzW1bn0EfppO_ZV/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1VYgLiHhhMNgLph9xQDzW1bn0EfppO_ZV/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1VYgLiHhhMNgLph9xQDzW1bn0EfppO_ZV/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "agua-sistemas-integrados-mananciais",
+      "title": "Sistemas integrados — mananciais",
+      "meta": [
+        6
+      ],
+      "theme": "abastecimento de água",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1IDACV1nJHSfOnqd5RGdx88jJcK5CRLyd/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1IDACV1nJHSfOnqd5RGdx88jJcK5CRLyd/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1IDACV1nJHSfOnqd5RGdx88jJcK5CRLyd/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "agua-sistemas-integrados-adutoras",
+      "title": "Sistemas integrados — adutoras",
+      "meta": [
+        6
+      ],
+      "theme": "abastecimento de água",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1FgGOhvFz9fLnNfepfWCaP0g0zvuYgEx9/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1FgGOhvFz9fLnNfepfWCaP0g0zvuYgEx9/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1FgGOhvFz9fLnNfepfWCaP0g0zvuYgEx9/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "agua-indice-seguranca-hidrica",
+      "title": "Índice de Segurança Hídrica",
+      "meta": [
+        6
+      ],
+      "theme": "abastecimento de água",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1Ej8yAqDvAGcPI4F_9EUkyvXk7GNMu7i1/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1Ej8yAqDvAGcPI4F_9EUkyvXk7GNMu7i1/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1Ej8yAqDvAGcPI4F_9EUkyvXk7GNMu7i1/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "agua-consumo-microbacia",
+      "title": "Consumo por microbacia",
+      "meta": [
+        6
+      ],
+      "theme": "abastecimento de água",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1brbQxWzh9U4ZMQWh9Hceb1JlQOdhiIiv/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1brbQxWzh9U4ZMQWh9Hceb1JlQOdhiIiv/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1brbQxWzh9U4ZMQWh9Hceb1JlQOdhiIiv/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "agua-pocos-natureza",
+      "title": "Poços por natureza",
+      "meta": [
+        6
+      ],
+      "theme": "abastecimento de água",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1UJ63tcn2MOhr6KIM6gUNa32T09GtT2ga/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1UJ63tcn2MOhr6KIM6gUNa32T09GtT2ga/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1UJ63tcn2MOhr6KIM6gUNa32T09GtT2ga/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "esgoto-eficiencia-tratamento",
+      "title": "Eficiência de tratamento",
+      "meta": [
+        6
+      ],
+      "theme": "esgotamento sanitário",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1kOm3mVzzuMpBZrM7vQJORuKoNb1a0k3R/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1kOm3mVzzuMpBZrM7vQJORuKoNb1a0k3R/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1kOm3mVzzuMpBZrM7vQJORuKoNb1a0k3R/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "esgoto-remocao-carga-organica",
+      "title": "Remoção de carga orgânica",
+      "meta": [
+        6
+      ],
+      "theme": "esgotamento sanitário",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1w3p3DOsfANhDcgKyKsAL4A5dSrF6aqsf/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1w3p3DOsfANhDcgKyKsAL4A5dSrF6aqsf/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1w3p3DOsfANhDcgKyKsAL4A5dSrF6aqsf/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "esgoto-balanco-quali-quanti",
+      "title": "Balanço qualitativo e quantitativo",
+      "meta": [
+        6
+      ],
+      "theme": "esgotamento sanitário",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1QdihcMxSvGktZGzO7UZ92xTt9RdfRJ2_/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1QdihcMxSvGktZGzO7UZ92xTt9RdfRJ2_/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1QdihcMxSvGktZGzO7UZ92xTt9RdfRJ2_/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "residuos-iqr-lixoes-desativados",
+      "title": "IQR considerando lixões desativados",
+      "meta": [
+        6
+      ],
+      "theme": "resíduos sólidos",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1BiKPN6zuNGVqKdtk9WG6ia5uxoVcYfxe/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1BiKPN6zuNGVqKdtk9WG6ia5uxoVcYfxe/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1BiKPN6zuNGVqKdtk9WG6ia5uxoVcYfxe/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "residuos-iqr-operacao",
+      "title": "IQR da disposição final em operação",
+      "meta": [
+        6
+      ],
+      "theme": "resíduos sólidos",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/11olprEgpaAraaC6EvrneyRJqQ9bDzUeU/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/11olprEgpaAraaC6EvrneyRJqQ9bDzUeU/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/11olprEgpaAraaC6EvrneyRJqQ9bDzUeU/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "residuos-lixoes-desativados-operacao",
+      "title": "Existência de lixões desativados e em operação",
+      "meta": [
+        6
+      ],
+      "theme": "resíduos sólidos",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1QZ5jUYzIY3MPp0SjdPOWSyFYsvVhOTvY/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1QZ5jUYzIY3MPp0SjdPOWSyFYsvVhOTvY/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1QZ5jUYzIY3MPp0SjdPOWSyFYsvVhOTvY/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "residuos-tipos-depositos",
+      "title": "Tipos de depósitos de resíduos",
+      "meta": [
+        6
+      ],
+      "theme": "resíduos sólidos",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/15WuybW-tnmigxUPOSKlErn5CX89oXu9u/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/15WuybW-tnmigxUPOSKlErn5CX89oXu9u/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/15WuybW-tnmigxUPOSKlErn5CX89oXu9u/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "residuos-aterro-sanitario",
+      "title": "Municípios que enviam resíduos para aterro sanitário",
+      "meta": [
+        6
+      ],
+      "theme": "resíduos sólidos",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1SNkbXg1ucZLwkMX_1-rbYMWf87tiFRHR/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1SNkbXg1ucZLwkMX_1-rbYMWf87tiFRHR/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1SNkbXg1ucZLwkMX_1-rbYMWf87tiFRHR/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "residuos-lixo-negociado",
+      "title": "Situação dos municípios no Projeto Lixo Negociado",
+      "meta": [
+        6
+      ],
+      "theme": "resíduos sólidos",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1l3-KxOWpRiKVFGiakoJrO7Ao7HmYXbl0/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1l3-KxOWpRiKVFGiakoJrO7Ao7HmYXbl0/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1l3-KxOWpRiKVFGiakoJrO7Ao7HmYXbl0/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "residuos-coletados-gerados",
+      "title": "Resíduos coletados e gerados",
+      "meta": [
+        6
+      ],
+      "theme": "resíduos sólidos",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1nbKWPzjjMEVOwZ_Qd7sfY6bT0OM8RFle/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1nbKWPzjjMEVOwZ_Qd7sfY6bT0OM8RFle/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1nbKWPzjjMEVOwZ_Qd7sfY6bT0OM8RFle/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "residuos-coleta-seletiva",
+      "title": "Existência de coleta seletiva",
+      "meta": [
+        6
+      ],
+      "theme": "resíduos sólidos",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/14ZH-_2epqMlJDUKFbmnpfqvB1CDe8u7O/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/14ZH-_2epqMlJDUKFbmnpfqvB1CDe8u7O/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/14ZH-_2epqMlJDUKFbmnpfqvB1CDe8u7O/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "residuos-populacao-atendida",
+      "title": "População atendida por serviços de resíduos sólidos",
+      "meta": [
+        6
+      ],
+      "theme": "resíduos sólidos",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1Q_oFb9P1mEJ6kBsP5sgbNlMiV6Fqs6C_/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1Q_oFb9P1mEJ6kBsP5sgbNlMiV6Fqs6C_/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1Q_oFb9P1mEJ6kBsP5sgbNlMiV6Fqs6C_/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "drenagem-distribuicao-precipitacao",
+      "title": "Distribuição da precipitação",
+      "meta": [
+        6
+      ],
+      "theme": "drenagem e águas pluviais",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1sa5vy2vDTEQdf-PFvbR_dyyp8I9uEQ9y/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1sa5vy2vDTEQdf-PFvbR_dyyp8I9uEQ9y/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1sa5vy2vDTEQdf-PFvbR_dyyp8I9uEQ9y/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "drenagem-identificacao-bhrp",
+      "title": "Identificação da Bacia Hidrográfica do Rio Potengi",
+      "meta": [
+        6
+      ],
+      "theme": "drenagem e águas pluviais",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1pqZJX1G3Jttz_MMmihg2wPXjyg8y7LS6/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1pqZJX1G3Jttz_MMmihg2wPXjyg8y7LS6/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1pqZJX1G3Jttz_MMmihg2wPXjyg8y7LS6/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "drenagem-vulnerabilidade-apps",
+      "title": "Vulnerabilidade das APPs — toda a bacia",
+      "meta": [
+        6
+      ],
+      "theme": "drenagem e águas pluviais",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/13y_vPi3VaPNyumLnsXTluBtXr4rTT5-O/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/13y_vPi3VaPNyumLnsXTluBtXr4rTT5-O/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/13y_vPi3VaPNyumLnsXTluBtXr4rTT5-O/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "drenagem-alagamento-erosao",
+      "title": "Municípios atingidos por alagamento e processos erosivos",
+      "meta": [
+        6
+      ],
+      "theme": "drenagem e águas pluviais",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1zi5ZV4chUE9-uZe2ebTTnVdPG4kwf3dY/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1zi5ZV4chUE9-uZe2ebTTnVdPG4kwf3dY/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1zi5ZV4chUE9-uZe2ebTTnVdPG4kwf3dY/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "drenagem-apps-criticas-ocupadas",
+      "title": "APPs críticas e ocupadas irregularmente",
+      "meta": [
+        6
+      ],
+      "theme": "drenagem e águas pluviais",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1J-4uaKs86qUa3ub-r2lFfBPpruFizyuh/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1J-4uaKs86qUa3ub-r2lFfBPpruFizyuh/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1J-4uaKs86qUa3ub-r2lFfBPpruFizyuh/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "drenagem-enchentes-inundacoes",
+      "title": "Enchentes ou inundações graduais — MUNIC 2017",
+      "meta": [
+        6
+      ],
+      "theme": "drenagem e águas pluviais",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1Q9oiQsmMkifySsy-keBFIIoy3UK3I_t1/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1Q9oiQsmMkifySsy-keBFIIoy3UK3I_t1/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1Q9oiQsmMkifySsy-keBFIIoy3UK3I_t1/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "drenagem-eventos-cheias",
+      "title": "Eventos de cheias — ANA/SEDEC",
+      "meta": [
+        6
+      ],
+      "theme": "drenagem e águas pluviais",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1C-3Ryhj9DFDb5-xxK_uDqGmbb2bQBtym/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1C-3Ryhj9DFDb5-xxK_uDqGmbb2bQBtym/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1C-3Ryhj9DFDb5-xxK_uDqGmbb2bQBtym/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "drenagem-plano-diretor",
+      "title": "Existência de Plano Diretor",
+      "meta": [
+        6
+      ],
+      "theme": "drenagem e águas pluviais",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1Nyb_F4anih82kju8aVTayK79KfMGxlUQ/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1Nyb_F4anih82kju8aVTayK79KfMGxlUQ/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1Nyb_F4anih82kju8aVTayK79KfMGxlUQ/view?usp=drivesdk",
+      "catalogStatus": "new_2026-08-26",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    },
+    {
+      "id": "saneamento-pmsb",
+      "title": "Situação dos municípios quanto ao PMSB",
+      "meta": [
+        6
+      ],
+      "theme": "planejamento de saneamento",
+      "territory": "25 municípios da Bacia Hidrográfica do Rio Potengi",
+      "sourceUrl": "https://drive.google.com/file/d/1euvv3T24ZHU_rBcm4c7-XBycUWpcSYqI/view?usp=drivesdk",
+      "previewUrl": "https://drive.google.com/file/d/1euvv3T24ZHU_rBcm4c7-XBycUWpcSYqI/view?usp=drivesdk",
+      "downloadUrl": "https://drive.google.com/file/d/1euvv3T24ZHU_rBcm4c7-XBycUWpcSYqI/view?usp=drivesdk",
+      "catalogStatus": "existing",
+      "webgisRelation": "mapa_estatico; camada_a_avaliar",
+      "note": null,
+      "alternateUrls": []
+    }
+  ]
+}

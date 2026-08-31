@@ -1,0 +1,224 @@
+{
+  "crs_publicacao": "EPSG:4326",
+  "formato": "GeoJSON",
+  "camadas": [
+    {
+      "arquivo": "bacia-rio-potengi.geojson",
+      "feicoes": 1,
+      "tamanho_bytes": 53136
+    },
+    {
+      "arquivo": "municipios.geojson",
+      "feicoes": 31,
+      "tamanho_bytes": 46775
+    },
+    {
+      "arquivo": "rios.geojson",
+      "feicoes": 1091,
+      "tamanho_bytes": 771262
+    },
+    {
+      "arquivo": "massas-agua.geojson",
+      "feicoes": 676,
+      "tamanho_bytes": 347275
+    },
+    {
+      "arquivo": "nascentes.geojson",
+      "feicoes": 427,
+      "tamanho_bytes": 104309
+    },
+    {
+      "arquivo": "vulnerabilidade.geojson",
+      "feicoes": 5,
+      "tamanho_bytes": 5118095
+    },
+    {
+      "arquivo": "uso-solo.geojson",
+      "feicoes": 20,
+      "tamanho_bytes": 3598391
+    },
+    {
+      "arquivo": "app-hidrografia.geojson",
+      "feicoes": 1,
+      "tamanho_bytes": 747099
+    },
+    {
+      "arquivo": "tratamento-esgoto.geojson",
+      "feicoes": 25,
+      "tamanho_bytes": 41092
+    },
+    {
+      "arquivo": "lixoes.geojson",
+      "feicoes": 24,
+      "tamanho_bytes": 3813
+    },
+    {
+      "arquivo": "pontos-campo.geojson",
+      "feicoes": 107,
+      "tamanho_bytes": 21960
+    },
+    {
+      "arquivo": "area-plantio-eloy.geojson",
+      "feicoes": 9,
+      "tamanho_bytes": 7838
+    },
+    {
+      "arquivo": "cercamento-nascente.geojson",
+      "feicoes": 3,
+      "tamanho_bytes": 1764
+    },
+    {
+      "arquivo": "cercamento-eloy.geojson",
+      "feicoes": 12,
+      "tamanho_bytes": 4306
+    },
+    {
+      "arquivo": "area-mundo-novo.geojson",
+      "feicoes": 1,
+      "tamanho_bytes": 714
+    },
+    {
+      "arquivo": "recuperacao-eaj.geojson",
+      "feicoes": 11,
+      "tamanho_bytes": 6708
+    },
+    {
+      "arquivo": "nucleacao-eaj.geojson",
+      "feicoes": 124,
+      "tamanho_bytes": 148561
+    },
+    {
+      "arquivo": "areas-descobertas-eaj.geojson",
+      "feicoes": 10,
+      "tamanho_bytes": 6064
+    },
+    {
+      "arquivo": "subbacias.geojson",
+      "feicoes": 8,
+      "tamanho_bytes": 29718
+    },
+    {
+      "arquivo": "area-urbana.geojson",
+      "feicoes": 1,
+      "tamanho_bytes": 87622
+    },
+    {
+      "arquivo": "rodovias-federais.geojson",
+      "feicoes": 33,
+      "tamanho_bytes": 21196
+    },
+    {
+      "arquivo": "rodovias-estaduais.geojson",
+      "feicoes": 44,
+      "tamanho_bytes": 29202
+    },
+    {
+      "arquivo": "vegetacao.geojson",
+      "feicoes": 6,
+      "tamanho_bytes": 348785
+    },
+    {
+      "arquivo": "geologia.geojson",
+      "feicoes": 448,
+      "tamanho_bytes": 721269
+    },
+    {
+      "arquivo": "geomorfologia.geojson",
+      "feicoes": 10,
+      "tamanho_bytes": 168127
+    },
+    {
+      "arquivo": "pedologia.geojson",
+      "feicoes": 32,
+      "tamanho_bytes": 288590
+    },
+    {
+      "arquivo": "aquiferos.geojson",
+      "feicoes": 3,
+      "tamanho_bytes": 205022
+    },
+    {
+      "arquivo": "app-rios.geojson",
+      "feicoes": 5,
+      "tamanho_bytes": 896200
+    },
+    {
+      "arquivo": "app-declividade.geojson",
+      "feicoes": 1,
+      "tamanho_bytes": 18260
+    },
+    {
+      "arquivo": "pluviometria-anual.geojson",
+      "feicoes": 8,
+      "tamanho_bytes": 38325
+    },
+    {
+      "arquivo": "intensidade-pluviometrica.geojson",
+      "feicoes": 6,
+      "tamanho_bytes": 44290
+    },
+    {
+      "arquivo": "isoietas.geojson",
+      "feicoes": 71,
+      "tamanho_bytes": 77451
+    },
+    {
+      "arquivo": "estacoes-pluviometricas.geojson",
+      "feicoes": 17,
+      "tamanho_bytes": 4514
+    },
+    {
+      "arquivo": "coletas-solo.geojson",
+      "feicoes": 85,
+      "tamanho_bytes": 20022
+    },
+    {
+      "arquivo": "corredor-ecologico-eloy-area.geojson",
+      "feicoes": 1,
+      "tamanho_bytes": 438
+    },
+    {
+      "arquivo": "corredor-ecologico-eloy-eixo.geojson",
+      "feicoes": 1,
+      "tamanho_bytes": 408
+    },
+    {
+      "arquivo": "porteiras-eloy.geojson",
+      "feicoes": 7,
+      "tamanho_bytes": 1834
+    },
+    {
+      "arquivo": "trilha-nascente.geojson",
+      "feicoes": 2,
+      "tamanho_bytes": 1318
+    },
+    {
+      "arquivo": "zoneamento-eaj.geojson",
+      "feicoes": 19,
+      "tamanho_bytes": 19730
+    },
+    {
+      "arquivo": "drenagens-eaj.geojson",
+      "feicoes": 15,
+      "tamanho_bytes": 6993
+    },
+    {
+      "arquivo": "trechos-bacia.geojson",
+      "feicoes": 3,
+      "tamanho_bytes": 60699
+    },
+    {
+      "arquivo": "qualidade-residuos.geojson",
+      "feicoes": 25,
+      "tamanho_bytes": 57605
+    }
+  ],
+  "observacoes": [
+    "Os arquivos originais permanecem no Google Drive do projeto.",
+    "A vulnerabilidade foi dissolvida por classe e simplificada para uso eficiente na Web.",
+    "A camada de qualidade de resíduos foi recuperada da versão KMZ disponível no Drive.",
+    "Camadas temáticas estaduais foram recortadas pelo limite da Bacia do Rio Potengi.",
+    "Rasters extensos e produtos cartográficos prontos permanecem no acervo de Mapas; não foram duplicados como GeoJSON.",
+    "Atributos técnicos sem função de consulta pública foram removidos."
+  ]
+}

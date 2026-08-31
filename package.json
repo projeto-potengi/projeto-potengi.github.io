@@ -1,0 +1,37 @@
+{
+  "name": "painel-webgis-rio-potengi",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "npm run webgis:index && npm run webgis:ui && npm run webgis:derivatives",
+    "build": "next build",
+    "lint": "eslint .",
+    "test": "node --test",
+    "geodata:download": "powershell -ExecutionPolicy Bypass -File scripts/download-geodata.ps1",
+    "geodata:process": "node scripts/process-geodata.mjs",
+    "webgis:index": "node scripts/build-webgis-search-index.mjs",
+    "webgis:derivatives": "node scripts/build-webgis-render-derivatives.mjs",
+    "webgis:ui": "node scripts/build-webgis-ui-artifacts.mjs"
+  },
+  "dependencies": {
+    "@types/geojson": "^7946.0.16",
+    "echarts": "^6.0.0",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.541.0",
+    "next": "^16.3.3",
+    "ol": "^10.6.1",
+    "proj4": "^2.21.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "shpjs": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.11",
+    "@types/react-dom": "^19.1.7",
+    "eslint": "^9.34.0",
+    "eslint-config-next": "^16.3.3",
+    "typescript": "^5.9.2"
+  }
+}

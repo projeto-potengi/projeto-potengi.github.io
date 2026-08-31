@@ -1,0 +1,880 @@
+{
+  "versao": "2.0",
+  "crs": "EPSG:4326",
+  "carregamento": "sob_demanda",
+  "grupos": [
+    {
+      "id": "territorio",
+      "titulo": "Território da bacia",
+      "camadas": [
+        {
+          "id": "bacia",
+          "titulo": "Limite da Bacia do Rio Potengi",
+          "arquivo": "bacia-rio-potengi.geojson",
+          "geometria": "Polygon",
+          "visivel": true,
+          "opacidade": 1,
+          "estilo": {
+            "fill": "rgba(15, 93, 105, 0.04)",
+            "stroke": "#0f5d69",
+            "strokeWidth": 2.4
+          },
+          "camposConsulta": [
+            "area_ha",
+            "fonte"
+          ]
+        },
+        {
+          "id": "municipios",
+          "titulo": "Municípios",
+          "arquivo": "municipios.geojson",
+          "geometria": "Polygon",
+          "visivel": true,
+          "opacidade": 0.8,
+          "estilo": {
+            "fill": "rgba(255,255,255,0.02)",
+            "stroke": "#64748b",
+            "strokeWidth": 0.8
+          },
+          "rotulo": "municipio",
+          "camposConsulta": [
+            "municipio",
+            "codigo",
+            "area_km2",
+            "fonte"
+          ]
+        },
+        {
+          "id": "rios",
+          "titulo": "Rede hidrográfica",
+          "arquivo": "rios.geojson",
+          "geometria": "LineString",
+          "visivel": true,
+          "opacidade": 0.92,
+          "estilo": {
+            "stroke": "#2386c8",
+            "strokeWidth": 1.15
+          },
+          "camposConsulta": [
+            "nome",
+            "regime",
+            "ordem",
+            "largura",
+            "dominialidade",
+            "fonte"
+          ]
+        },
+        {
+          "id": "massas-agua",
+          "titulo": "Massas d’água",
+          "arquivo": "massas-agua.geojson",
+          "geometria": "Polygon",
+          "visivel": true,
+          "opacidade": 0.8,
+          "estilo": {
+            "fill": "rgba(56, 162, 215, 0.62)",
+            "stroke": "#176b9c",
+            "strokeWidth": 0.8
+          },
+          "camposConsulta": [
+            "nome",
+            "tipo",
+            "origem",
+            "municipio",
+            "area_ha",
+            "uso_principal",
+            "fonte"
+          ]
+        },
+        {
+          "id": "nascentes",
+          "titulo": "Nascentes",
+          "arquivo": "nascentes.geojson",
+          "geometria": "Point",
+          "visivel": false,
+          "opacidade": 1,
+          "minZoom": 8,
+          "estilo": {
+            "circleRadius": 4.5,
+            "fill": "#14b8a6",
+            "stroke": "#ffffff",
+            "strokeWidth": 1.2
+          },
+          "camposConsulta": [
+            "nome",
+            "situacao",
+            "tipo",
+            "fonte"
+          ]
+        },
+        {
+          "id": "subbacias",
+          "titulo": "Sub-bacias",
+          "arquivo": "subbacias.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "identificador",
+            "fonte"
+          ],
+          "estilo": {
+            "fill": "rgba(14,116,144,0.04)",
+            "stroke": "#0e7490",
+            "strokeWidth": 1.2
+          }
+        },
+        {
+          "id": "trechos-bacia",
+          "titulo": "Alto, médio e baixo curso",
+          "arquivo": "trechos-bacia.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "trecho",
+            "fonte"
+          ],
+          "classificacao": {
+            "campo": "trecho",
+            "paleta": "categorica"
+          }
+        },
+        {
+          "id": "area-urbana",
+          "titulo": "Área urbanizada",
+          "arquivo": "area-urbana.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "grupo",
+            "classe",
+            "fonte"
+          ],
+          "estilo": {
+            "fill": "rgba(100,116,139,0.45)",
+            "stroke": "#475569",
+            "strokeWidth": 0.8
+          }
+        },
+        {
+          "id": "rodovias-federais",
+          "titulo": "Rodovias federais",
+          "arquivo": "rodovias-federais.geojson",
+          "geometria": "LineString",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "rodovia",
+            "tipo",
+            "inicio",
+            "fim",
+            "superficie",
+            "localidade",
+            "fonte"
+          ],
+          "estilo": {
+            "stroke": "#f59e0b",
+            "strokeWidth": 2.2
+          }
+        },
+        {
+          "id": "rodovias-estaduais",
+          "titulo": "Rodovias estaduais",
+          "arquivo": "rodovias-estaduais.geojson",
+          "geometria": "LineString",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "rodovia",
+            "administracao",
+            "superficie",
+            "fonte"
+          ],
+          "estilo": {
+            "stroke": "#fb923c",
+            "strokeWidth": 1.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "diagnostico",
+      "titulo": "Diagnóstico ambiental",
+      "camadas": [
+        {
+          "id": "vulnerabilidade",
+          "titulo": "Vulnerabilidade ambiental",
+          "arquivo": "vulnerabilidade.geojson",
+          "geometria": "MultiPolygon",
+          "visivel": true,
+          "opacidade": 0.68,
+          "classificacao": {
+            "campo": "classe",
+            "itens": [
+              {
+                "valor": 1,
+                "rotulo": "Muito baixa",
+                "cor": "#1a9850"
+              },
+              {
+                "valor": 2,
+                "rotulo": "Baixa",
+                "cor": "#91cf60"
+              },
+              {
+                "valor": 3,
+                "rotulo": "Moderada",
+                "cor": "#fee08b"
+              },
+              {
+                "valor": 4,
+                "rotulo": "Alta",
+                "cor": "#fc8d59"
+              },
+              {
+                "valor": 5,
+                "rotulo": "Muito alta",
+                "cor": "#d73027"
+              }
+            ]
+          },
+          "camposConsulta": [
+            "categoria",
+            "classe",
+            "fonte"
+          ]
+        },
+        {
+          "id": "uso-solo",
+          "titulo": "Uso e cobertura do solo",
+          "arquivo": "uso-solo.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.72,
+          "classificacao": {
+            "campo": "classe",
+            "paleta": "categorica"
+          },
+          "camposConsulta": [
+            "grupo",
+            "classe",
+            "peso",
+            "fonte"
+          ]
+        },
+        {
+          "id": "app-hidrografia",
+          "titulo": "Áreas de Preservação Permanente da hidrografia",
+          "arquivo": "app-hidrografia.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.5,
+          "estilo": {
+            "fill": "rgba(43, 138, 62, 0.48)",
+            "stroke": "#20732f",
+            "strokeWidth": 0.9
+          },
+          "camposConsulta": [
+            "tipo",
+            "area_ha",
+            "fonte"
+          ]
+        },
+        {
+          "id": "pontos-campo",
+          "titulo": "Pontos de campo",
+          "arquivo": "pontos-campo.geojson",
+          "geometria": "Point",
+          "visivel": false,
+          "opacidade": 1,
+          "minZoom": 9,
+          "estilo": {
+            "circleRadius": 4.5,
+            "fill": "#7c3aed",
+            "stroke": "#ffffff",
+            "strokeWidth": 1.2
+          },
+          "camposConsulta": [
+            "nome",
+            "grupo",
+            "data_registro",
+            "informacoes"
+          ]
+        },
+        {
+          "id": "vegetacao",
+          "titulo": "Vegetação",
+          "arquivo": "vegetacao.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "formacao",
+            "subformacao",
+            "unidade_vegetacao",
+            "situacao",
+            "fonte"
+          ],
+          "classificacao": {
+            "campo": "subformacao",
+            "paleta": "categorica"
+          }
+        },
+        {
+          "id": "geologia",
+          "titulo": "Geologia",
+          "arquivo": "geologia.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "sigla",
+            "unidade",
+            "era",
+            "periodo",
+            "litotipo_principal",
+            "grupo",
+            "fonte"
+          ],
+          "classificacao": {
+            "campo": "unidade",
+            "paleta": "categorica"
+          }
+        },
+        {
+          "id": "geomorfologia",
+          "titulo": "Geomorfologia",
+          "arquivo": "geomorfologia.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "taxon_1",
+            "taxon_2",
+            "unidade",
+            "rotulo",
+            "fonte"
+          ],
+          "classificacao": {
+            "campo": "unidade",
+            "paleta": "categorica"
+          }
+        },
+        {
+          "id": "pedologia",
+          "titulo": "Pedologia",
+          "arquivo": "pedologia.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "unidade",
+            "ordem",
+            "subordem",
+            "textura",
+            "relevo",
+            "fator_k",
+            "fonte"
+          ],
+          "classificacao": {
+            "campo": "ordem",
+            "paleta": "categorica"
+          }
+        },
+        {
+          "id": "aquiferos",
+          "titulo": "Aquíferos",
+          "arquivo": "aquiferos.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "aquifero",
+            "descricao",
+            "consumo",
+            "irrigacao",
+            "fonte"
+          ],
+          "classificacao": {
+            "campo": "aquifero",
+            "paleta": "categorica"
+          }
+        },
+        {
+          "id": "app-rios",
+          "titulo": "APP dos rios",
+          "arquivo": "app-rios.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "faixa",
+            "tipo",
+            "fonte"
+          ],
+          "estilo": {
+            "fill": "rgba(22,163,74,0.42)",
+            "stroke": "#15803d",
+            "strokeWidth": 0.9
+          }
+        },
+        {
+          "id": "app-declividade",
+          "titulo": "APP por declividade",
+          "arquivo": "app-declividade.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "declividade",
+            "area_ha",
+            "fonte"
+          ],
+          "estilo": {
+            "fill": "rgba(132,204,22,0.48)",
+            "stroke": "#4d7c0f",
+            "strokeWidth": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "clima-solos",
+      "titulo": "Clima e solos",
+      "camadas": [
+        {
+          "id": "pluviometria-anual",
+          "titulo": "Pluviometria anual",
+          "arquivo": "pluviometria-anual.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "faixa",
+            "valor_referencia",
+            "fonte"
+          ],
+          "classificacao": {
+            "campo": "valor_referencia",
+            "paleta": "sequencial_azul"
+          }
+        },
+        {
+          "id": "intensidade-pluviometrica",
+          "titulo": "Intensidade pluviométrica",
+          "arquivo": "intensidade-pluviometrica.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "faixa",
+            "valor_referencia",
+            "fonte"
+          ],
+          "classificacao": {
+            "campo": "valor_referencia",
+            "paleta": "sequencial_azul"
+          }
+        },
+        {
+          "id": "isoietas",
+          "titulo": "Isoietas",
+          "arquivo": "isoietas.geojson",
+          "geometria": "LineString",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "precipitacao_mm",
+            "tipo",
+            "fonte"
+          ],
+          "classificacao": {
+            "campo": "precipitacao_mm",
+            "paleta": "sequencial_azul"
+          }
+        },
+        {
+          "id": "estacoes-pluviometricas",
+          "titulo": "Estações pluviométricas",
+          "arquivo": "estacoes-pluviometricas.geojson",
+          "geometria": "Point",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "municipio",
+            "posto",
+            "precipitacao_media",
+            "dias_chuvosos",
+            "intensidade",
+            "fonte"
+          ],
+          "minZoom": 7,
+          "estilo": {
+            "circleRadius": 5,
+            "fill": "#2563eb",
+            "stroke": "#ffffff",
+            "strokeWidth": 1.2
+          }
+        },
+        {
+          "id": "coletas-solo",
+          "titulo": "Pontos de coleta de solo",
+          "arquivo": "coletas-solo.geojson",
+          "geometria": "Point",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "nome",
+            "data",
+            "informacoes",
+            "fonte"
+          ],
+          "minZoom": 8,
+          "estilo": {
+            "circleRadius": 4.5,
+            "fill": "#92400e",
+            "stroke": "#ffffff",
+            "strokeWidth": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "intervencoes",
+      "titulo": "Áreas e ações de recuperação",
+      "camadas": [
+        {
+          "id": "cercamento-nascente",
+          "titulo": "Cercamento — Nascentes do Potengi",
+          "arquivo": "cercamento-nascente.geojson",
+          "geometria": "Polygon",
+          "visivel": true,
+          "opacidade": 0.85,
+          "minZoom": 10,
+          "estilo": {
+            "fill": "rgba(0, 120, 108, 0.35)",
+            "stroke": "#00786c",
+            "strokeWidth": 2
+          },
+          "camposConsulta": [
+            "area_atuacao",
+            "acao",
+            "fonte_dado",
+            "elemento"
+          ]
+        },
+        {
+          "id": "area-plantio-eloy",
+          "titulo": "Áreas de plantio — Açude Eloy de Souza",
+          "arquivo": "area-plantio-eloy.geojson",
+          "geometria": "Polygon",
+          "visivel": true,
+          "opacidade": 0.78,
+          "minZoom": 10,
+          "estilo": {
+            "fill": "rgba(245, 183, 0, 0.5)",
+            "stroke": "#8a6500",
+            "strokeWidth": 1.6
+          },
+          "camposConsulta": [
+            "area_atuacao",
+            "acao",
+            "nome",
+            "fonte_dado"
+          ]
+        },
+        {
+          "id": "cercamento-eloy",
+          "titulo": "Cercamentos — Açude Eloy de Souza",
+          "arquivo": "cercamento-eloy.geojson",
+          "geometria": "LineString",
+          "visivel": true,
+          "opacidade": 1,
+          "minZoom": 10,
+          "estilo": {
+            "stroke": "#7c3aed",
+            "strokeWidth": 2.2,
+            "lineDash": [
+              8,
+              5
+            ]
+          },
+          "camposConsulta": [
+            "area_atuacao",
+            "acao",
+            "nome",
+            "fonte_dado"
+          ]
+        },
+        {
+          "id": "area-mundo-novo",
+          "titulo": "Área de recuperação — Fazenda Mundo Novo",
+          "arquivo": "area-mundo-novo.geojson",
+          "geometria": "Polygon",
+          "visivel": true,
+          "opacidade": 0.82,
+          "minZoom": 10,
+          "estilo": {
+            "fill": "rgba(236, 72, 153, 0.4)",
+            "stroke": "#be185d",
+            "strokeWidth": 1.8
+          },
+          "camposConsulta": [
+            "area_atuacao",
+            "acao",
+            "fonte_dado"
+          ]
+        },
+        {
+          "id": "recuperacao-eaj",
+          "titulo": "Áreas de recuperação — Escola Agrícola de Jundiaí",
+          "arquivo": "recuperacao-eaj.geojson",
+          "geometria": "Polygon",
+          "visivel": true,
+          "opacidade": 0.78,
+          "minZoom": 10,
+          "estilo": {
+            "fill": "rgba(217, 119, 6, 0.45)",
+            "stroke": "#92400e",
+            "strokeWidth": 1.8
+          },
+          "camposConsulta": [
+            "area_atuacao",
+            "acao",
+            "nome",
+            "fonte_dado"
+          ]
+        },
+        {
+          "id": "nucleacao-eaj",
+          "titulo": "Nucleação — Escola Agrícola de Jundiaí",
+          "arquivo": "nucleacao-eaj.geojson",
+          "geometria": "LineString",
+          "visivel": false,
+          "opacidade": 0.95,
+          "minZoom": 13,
+          "estilo": {
+            "stroke": "#0d9488",
+            "strokeWidth": 1.6
+          },
+          "camposConsulta": [
+            "area_atuacao",
+            "acao",
+            "fonte_dado",
+            "elemento"
+          ]
+        },
+        {
+          "id": "areas-descobertas-eaj",
+          "titulo": "Áreas descobertas — Escola Agrícola de Jundiaí",
+          "arquivo": "areas-descobertas-eaj.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.62,
+          "minZoom": 12,
+          "estilo": {
+            "fill": "rgba(148, 163, 184, 0.42)",
+            "stroke": "#475569",
+            "strokeWidth": 1.2
+          },
+          "camposConsulta": [
+            "area_atuacao",
+            "acao",
+            "fonte_dado",
+            "elemento"
+          ]
+        },
+        {
+          "id": "corredor-ecologico-eloy-area",
+          "titulo": "Corredor ecológico — área",
+          "arquivo": "corredor-ecologico-eloy-area.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "area_atuacao",
+            "acao",
+            "fonte"
+          ],
+          "minZoom": 12,
+          "estilo": {
+            "fill": "rgba(5,150,105,0.42)",
+            "stroke": "#047857",
+            "strokeWidth": 1.8
+          }
+        },
+        {
+          "id": "corredor-ecologico-eloy-eixo",
+          "titulo": "Corredor ecológico — eixo",
+          "arquivo": "corredor-ecologico-eloy-eixo.geojson",
+          "geometria": "LineString",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "area_atuacao",
+            "acao",
+            "fonte"
+          ],
+          "minZoom": 12,
+          "estilo": {
+            "stroke": "#047857",
+            "strokeWidth": 2.2,
+            "lineDash": [
+              7,
+              4
+            ]
+          }
+        },
+        {
+          "id": "porteiras-eloy",
+          "titulo": "Porteiras — Açude Eloy de Souza",
+          "arquivo": "porteiras-eloy.geojson",
+          "geometria": "Point",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "nome",
+            "area_atuacao",
+            "acao",
+            "fonte"
+          ],
+          "minZoom": 13,
+          "estilo": {
+            "circleRadius": 5,
+            "fill": "#713f12",
+            "stroke": "#ffffff",
+            "strokeWidth": 1.2
+          }
+        },
+        {
+          "id": "trilha-nascente",
+          "titulo": "Trilha de acesso à nascente",
+          "arquivo": "trilha-nascente.geojson",
+          "geometria": "LineString",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "area_atuacao",
+            "acao",
+            "fonte"
+          ],
+          "minZoom": 12,
+          "estilo": {
+            "stroke": "#a16207",
+            "strokeWidth": 2.0,
+            "lineDash": [
+              4,
+              4
+            ]
+          }
+        },
+        {
+          "id": "zoneamento-eaj",
+          "titulo": "Zoneamento — Escola Agrícola de Jundiaí",
+          "arquivo": "zoneamento-eaj.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "zona",
+            "area_atuacao",
+            "fonte"
+          ],
+          "minZoom": 11,
+          "classificacao": {
+            "campo": "zona",
+            "paleta": "categorica"
+          }
+        },
+        {
+          "id": "drenagens-eaj",
+          "titulo": "Drenagens — Escola Agrícola de Jundiaí",
+          "arquivo": "drenagens-eaj.geojson",
+          "geometria": "LineString",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "nome",
+            "ordem_drenagem",
+            "area_atuacao",
+            "fonte"
+          ],
+          "minZoom": 12,
+          "estilo": {
+            "stroke": "#0284c7",
+            "strokeWidth": 1.4
+          }
+        }
+      ]
+    },
+    {
+      "id": "saneamento",
+      "titulo": "Saneamento e pressões ambientais",
+      "camadas": [
+        {
+          "id": "tratamento-esgoto",
+          "titulo": "Tratamento de esgoto por município",
+          "arquivo": "tratamento-esgoto.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.62,
+          "classificacao": {
+            "campo": "situacao_tratamento",
+            "paleta": "categorica"
+          },
+          "camposConsulta": [
+            "municipio",
+            "manancial",
+            "tipo_sistema",
+            "situacao_tratamento",
+            "fonte"
+          ]
+        },
+        {
+          "id": "lixoes",
+          "titulo": "Lixões identificados",
+          "arquivo": "lixoes.geojson",
+          "geometria": "Point",
+          "visivel": false,
+          "opacidade": 1,
+          "estilo": {
+            "circleRadius": 5,
+            "fill": "#9f1239",
+            "stroke": "#ffffff",
+            "strokeWidth": 1.2
+          },
+          "camposConsulta": [
+            "nome",
+            "fonte"
+          ]
+        },
+        {
+          "id": "qualidade-residuos",
+          "titulo": "Qualidade da disposição de resíduos sólidos",
+          "arquivo": "qualidade-residuos.geojson",
+          "geometria": "Polygon",
+          "visivel": false,
+          "opacidade": 0.78,
+          "camposConsulta": [
+            "municipio",
+            "iqr_inferior",
+            "iqr_medio",
+            "iqr_superior",
+            "enquadramento",
+            "tipo_1",
+            "tipo_2",
+            "fonte"
+          ],
+          "classificacao": {
+            "campo": "enquadramento",
+            "paleta": "qualidade_residuos"
+          }
+        }
+      ]
+    }
+  ],
+  "totalCamadas": 42,
+  "notaPublicacao": "Camadas densas e de detalhamento são carregadas sob demanda e permanecem desligadas na abertura."
+}

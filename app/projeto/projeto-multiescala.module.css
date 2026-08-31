@@ -1,0 +1,1556 @@
+.page {
+  --ink: #153a40;
+  --muted: #687d81;
+  --teal: #0b819a;
+  --green: #2b845b;
+  --deep: #123f45;
+  --yellow: #d6aa22;
+  --line: rgba(21,58,64,.13);
+  --paper: #f7faf8;
+  --width: min(1220px, calc(100% - 48px));
+  overflow: hidden;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 7% 6%, rgba(59,197,221,.095), transparent 23%),
+    radial-gradient(circle at 95% 20%, rgba(63,150,111,.045), transparent 24%),
+    var(--paper);
+}
+
+.kicker,
+.kickerLight {
+  margin: 0 0 10px;
+  color: var(--green);
+  font-size: .67rem;
+  font-weight: 900;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.kickerLight {
+  color: #b8ddca;
+}
+
+/* ------------------------------------------------------------------ */
+/* Hero — estrutura própria da página Projeto                         */
+/* ------------------------------------------------------------------ */
+
+.hero {
+  width: var(--width);
+  display: grid;
+  grid-template-columns: minmax(0, 1.42fr) minmax(320px, .58fr);
+  gap: 56px;
+  align-items: stretch;
+  margin: 0 auto;
+  padding: 48px 0 42px;
+  border-bottom: 1px solid var(--line);
+}
+
+.heroNarrative {
+  align-self: center;
+  min-width: 0;
+}
+
+.heroNarrative h1 {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(2.75rem, 4.35vw, 4.45rem);
+  font-weight: 850;
+  letter-spacing: -.052em;
+  line-height: .96;
+}
+
+.lead {
+  max-width: 760px;
+  margin: 18px 0 0;
+  color: #526f74;
+  font-size: clamp(1rem, 1.28vw, 1.15rem);
+  line-height: 1.55;
+}
+
+.heroDossier {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  align-content: end;
+  min-height: 370px;
+  padding: 30px 28px 28px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 105% -5%, rgba(214,170,34,.20), transparent 34%),
+    linear-gradient(150deg, #174e53, #103b41 72%);
+  box-shadow: 0 18px 42px rgba(21,58,64,.09);
+}
+
+.heroDossier::after {
+  content: "";
+  position: absolute;
+  right: -72px;
+  bottom: -102px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 50%;
+}
+
+.dossierMark {
+  position: absolute;
+  top: 27px;
+  right: 25px;
+  display: grid;
+  justify-items: end;
+  color: rgba(255,255,255,.12);
+  line-height: .78;
+}
+
+.dossierMark span {
+  font-size: 2.45rem;
+  font-weight: 850;
+  letter-spacing: -.05em;
+}
+
+.dossierMark strong {
+  font-size: 3.15rem;
+  letter-spacing: -.06em;
+}
+
+.heroDossier > p {
+  position: relative;
+  z-index: 2;
+  max-width: 300px;
+  margin: 0 0 22px;
+  color: rgba(255,255,255,.72);
+  font-size: .78rem;
+  line-height: 1.52;
+}
+
+.heroDossier dl {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  margin: 0;
+}
+
+.heroDossier dl > div {
+  display: grid;
+  grid-template-columns: 105px minmax(0, 1fr);
+  gap: 13px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,255,255,.12);
+}
+
+.heroDossier dt {
+  color: #abd8c4;
+  font-size: .57rem;
+  font-weight: 850;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.heroDossier dd {
+  margin: 0;
+  color: #fff;
+  font-size: .66rem;
+  font-weight: 680;
+  line-height: 1.38;
+}
+
+/* ------------------------------------------------------------------ */
+/* O Projeto — objetivo + método sem timeline                         */
+/* ------------------------------------------------------------------ */
+
+.core {
+  width: var(--width);
+  display: grid;
+  grid-template-columns: minmax(300px, .44fr) minmax(0, .56fr);
+  gap: 68px;
+  margin: 0 auto;
+  padding: 52px 0;
+}
+
+.coreStatement h2 {
+  max-width: 530px;
+  margin: 0;
+  font-size: clamp(2.1rem, 3vw, 3.05rem);
+  font-weight: 830;
+  letter-spacing: -.045em;
+  line-height: 1.01;
+}
+
+.objective {
+  max-width: 530px;
+  margin-top: 31px;
+  padding-left: 20px;
+  border-left: 3px solid var(--yellow);
+}
+
+.objective > span,
+.methodology header > span {
+  display: block;
+  color: var(--green);
+  font-size: .61rem;
+  font-weight: 900;
+  letter-spacing: .105em;
+}
+
+.objective p {
+  margin: 11px 0 0;
+  color: #49676c;
+  font-size: .92rem;
+  font-weight: 630;
+  line-height: 1.62;
+}
+
+.methodology {
+  align-self: end;
+  padding: 27px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.methodology header {
+  display: grid;
+  grid-template-columns: minmax(180px, .42fr) minmax(0, .58fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.methodology header p {
+  max-width: 390px;
+  margin: 0;
+  color: #71878a;
+  font-size: .72rem;
+  line-height: 1.48;
+}
+
+.methodology ol {
+  display: grid;
+  margin: 23px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.methodology li {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 13px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.methodology li > b {
+  color: #9badb0;
+  font-size: .68rem;
+  font-weight: 850;
+}
+
+.methodology li > div {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 18px;
+}
+
+.methodology li strong {
+  color: var(--ink);
+  font-size: .76rem;
+}
+
+.methodology li span {
+  color: #718589;
+  font-size: .66rem;
+  line-height: 1.42;
+}
+
+/* ------------------------------------------------------------------ */
+/* Território — experiência narrativa multiescala                     */
+/* ------------------------------------------------------------------ */
+
+.territory {
+  width: 100%;
+  padding: 55px 0 62px;
+  background:
+    linear-gradient(180deg, rgba(18,63,69,.015), rgba(18,63,69,.035)),
+    rgba(255,255,255,.38);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.territoryHeader {
+  width: var(--width);
+  margin: 0 auto 23px;
+}
+
+.territoryHeader h2 {
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(2.25rem, 3.25vw, 3.35rem);
+  font-weight: 840;
+  letter-spacing: -.047em;
+  line-height: .99;
+}
+
+.territoryHeader > p:last-child {
+  max-width: 690px;
+  margin: 13px 0 0;
+  color: var(--muted);
+  font-size: .86rem;
+  line-height: 1.52;
+}
+
+.territoryJourney {
+  width: var(--width);
+  display: grid;
+  grid-template-columns: minmax(285px, .31fr) minmax(0, .69fr);
+  min-height: 590px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(21,58,64,.07);
+}
+
+.journeyPanel {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  min-width: 0;
+  padding: 27px 28px 23px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 0% 100%, rgba(214,170,34,.10), transparent 38%),
+    linear-gradient(158deg, #174d52, #113f44 78%);
+}
+
+.journeyProgress {
+  display: grid;
+  gap: 2px;
+}
+
+.journeyProgress button {
+  display: grid;
+  grid-template-columns: 35px minmax(0, 1fr);
+  gap: 9px;
+  align-items: center;
+  min-height: 45px;
+  padding: 0 10px;
+  color: rgba(255,255,255,.58);
+  text-align: left;
+  border: 0;
+  border-left: 3px solid rgba(255,255,255,.10);
+  background: transparent;
+  cursor: pointer;
+  transition: color .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.journeyProgress button:hover {
+  color: #fff;
+  background: rgba(255,255,255,.045);
+}
+
+.journeyProgress button b {
+  color: #91b5ad;
+  font-size: .57rem;
+}
+
+.journeyProgress button span {
+  font-size: .69rem;
+  font-weight: 800;
+}
+
+.journeyProgress .journeyStepActive {
+  color: #fff;
+  border-left-color: var(--yellow);
+  background: rgba(255,255,255,.055);
+}
+
+.journeyProgress .journeyStepActive b {
+  color: #f0c94e;
+}
+
+.journeyNarrative {
+  align-self: end;
+  padding: 31px 0 22px;
+}
+
+.journeyNarrative > span {
+  color: #a9d9c3;
+  font-size: .58rem;
+  font-weight: 900;
+  letter-spacing: .09em;
+}
+
+.journeyNarrative h3 {
+  max-width: 320px;
+  margin: 8px 0 0;
+  color: #fff;
+  font-size: clamp(1.65rem, 2.3vw, 2.3rem);
+  letter-spacing: -.037em;
+  line-height: 1.02;
+}
+
+.journeyNarrative p {
+  max-width: 315px;
+  margin: 12px 0 0;
+  color: rgba(255,255,255,.67);
+  font-size: .73rem;
+  line-height: 1.5;
+}
+
+.journeyNext {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 13px;
+  color: #173f44;
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: .66rem;
+  font-weight: 830;
+}
+
+.journeyNote {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-top: 14px;
+  color: rgba(255,255,255,.48);
+  font-size: .56rem;
+  line-height: 1.4;
+}
+
+.journeyMap {
+  position: relative;
+  min-width: 0;
+  min-height: 560px;
+  overflow: hidden;
+  background: #e8edef;
+}
+
+.journeyMapCanvas {
+  position: absolute;
+  inset: 0;
+}
+
+.mapStageBadge {
+  position: absolute;
+  z-index: 8;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  padding: 8px 10px;
+  color: var(--ink);
+  background: rgba(255,255,255,.94);
+  border: 1px solid rgba(21,58,64,.09);
+  box-shadow: 0 5px 15px rgba(21,58,64,.08);
+}
+
+.mapStageBadge b {
+  color: var(--green);
+  font-size: .57rem;
+}
+
+.mapStageBadge span {
+  font-size: .65rem;
+  font-weight: 850;
+}
+
+.mapCredit {
+  position: absolute;
+  z-index: 8;
+  right: 8px;
+  bottom: 7px;
+  padding: 3px 5px;
+  color: rgba(41,62,66,.72);
+  background: rgba(255,255,255,.78);
+  font-size: .48rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Governança                                                         */
+/* ------------------------------------------------------------------ */
+
+.governance {
+  width: var(--width);
+  display: grid;
+  grid-template-columns: minmax(290px, .42fr) minmax(0, .58fr);
+  margin: 56px auto 0;
+  overflow: hidden;
+  box-shadow: 0 16px 38px rgba(21,58,64,.05);
+}
+
+.coordination {
+  position: relative;
+  overflow: hidden;
+  padding: 36px 37px 34px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(214,170,34,.16), transparent 35%),
+    linear-gradient(155deg, #15494e, #103b41);
+}
+
+.coordination h2 {
+  max-width: 410px;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.85rem, 2.45vw, 2.45rem);
+  line-height: 1.02;
+  letter-spacing: -.038em;
+}
+
+.people {
+  display: grid;
+  gap: 5px;
+  margin-top: 33px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,.13);
+}
+
+.people strong {
+  color: #fff;
+  font-size: .86rem;
+}
+
+.people span {
+  margin-top: 6px;
+  color: rgba(255,255,255,.61);
+  font-size: .67rem;
+  line-height: 1.4;
+}
+
+.institutions {
+  padding: 34px 37px 32px;
+  background: rgba(255,255,255,.94);
+  border: 1px solid var(--line);
+  border-left: 0;
+}
+
+.institutionsHeader {
+  display: grid;
+  grid-template-columns: minmax(150px, .42fr) minmax(0, .58fr);
+  gap: 24px;
+  align-items: end;
+  padding-bottom: 19px;
+  border-bottom: 1px solid var(--line);
+}
+
+.institutionsHeader > p:last-child {
+  max-width: 360px;
+  margin: 0;
+  color: #71868a;
+  font-size: .66rem;
+  line-height: 1.48;
+}
+
+.institutionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  margin: 20px 0 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.institutionGrid li {
+  display: grid;
+  grid-template-rows: 94px auto;
+  min-width: 0;
+  padding: 18px 19px 16px;
+  background: #fff;
+}
+
+.institutionLogo {
+  position: relative;
+  width: 100%;
+  height: 78px;
+}
+
+.institutionLogo img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.institutionGrid li > div:last-child {
+  display: grid;
+  gap: 3px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(21,58,64,.07);
+}
+
+.institutionGrid strong {
+  color: var(--ink);
+  font-size: .72rem;
+}
+
+.institutionGrid span {
+  color: #718489;
+  font-size: .57rem;
+  line-height: 1.35;
+}
+
+/* ------------------------------------------------------------------ */
+/* Trajetória — ledger, sem linha temporal                            */
+/* ------------------------------------------------------------------ */
+
+.trajectory {
+  width: var(--width);
+  margin: 0 auto;
+  padding: 50px 0 57px;
+}
+
+.trajectory header {
+  display: grid;
+  grid-template-columns: minmax(0, .48fr) minmax(0, .52fr);
+  gap: 55px;
+  align-items: end;
+  margin-bottom: 23px;
+}
+
+.trajectory h2 {
+  max-width: 650px;
+  margin: 0;
+  font-size: clamp(2rem, 2.8vw, 2.8rem);
+  letter-spacing: -.043em;
+  line-height: 1.02;
+}
+
+.yearLedger {
+  display: grid;
+  grid-template-columns: .8fr .8fr 1.25fr .8fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.yearLedger li {
+  min-height: 168px;
+  padding: 22px 22px 21px;
+  border-right: 1px solid var(--line);
+}
+
+.yearLedger li:first-child {
+  padding-left: 0;
+}
+
+.yearLedger li:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.yearLedger b {
+  display: block;
+  color: rgba(11,129,154,.28);
+  font-size: clamp(2.1rem, 3.2vw, 3.1rem);
+  font-weight: 850;
+  letter-spacing: -.05em;
+  line-height: .95;
+}
+
+.yearLedger strong {
+  display: block;
+  margin-top: 16px;
+  color: var(--ink);
+  font-size: .72rem;
+}
+
+.yearLedger span {
+  display: block;
+  max-width: 230px;
+  margin-top: 7px;
+  color: #718589;
+  font-size: .62rem;
+  line-height: 1.42;
+}
+
+/* ------------------------------------------------------------------ */
+/* Responsive                                                         */
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .heroDossier {
+    min-height: 0;
+  }
+
+  .core {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .methodology {
+    padding-top: 24px;
+  }
+
+  .territoryJourney {
+    grid-template-columns: 1fr;
+  }
+
+  .journeyPanel {
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .journeyProgress {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .journeyProgress button {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding: 8px 9px;
+  }
+
+  .journeyNarrative {
+    align-self: auto;
+    padding: 24px 0 19px;
+  }
+
+  .journeyMap {
+    min-height: 500px;
+  }
+
+  .governance {
+    grid-template-columns: 1fr;
+  }
+
+  .institutions {
+    border-left: 1px solid var(--line);
+    border-top: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .page {
+    --width: min(100% - 30px, 1220px);
+  }
+
+  .hero {
+    padding-top: 34px;
+    gap: 28px;
+  }
+
+  .heroNarrative h1 {
+    font-size: clamp(2.55rem, 12vw, 3.7rem);
+  }
+
+  .heroDossier {
+    padding: 25px 22px;
+  }
+
+  .dossierMark {
+    display: none;
+  }
+
+  .core,
+  .trajectory {
+    padding-block: 39px;
+  }
+
+  .methodology header {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  .methodology li > div {
+    grid-template-columns: 95px minmax(0, 1fr);
+  }
+
+  .territory {
+    padding-block: 42px;
+  }
+
+  .territoryHeader h2 {
+    font-size: clamp(2.05rem, 10vw, 2.8rem);
+  }
+
+  .journeyProgress {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .journeyProgress button {
+    flex: 0 0 135px;
+  }
+
+  .journeyMap {
+    min-height: 410px;
+  }
+
+  .coordination,
+  .institutions {
+    padding-inline: 24px;
+  }
+
+  .trajectory header {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .yearLedger {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .yearLedger li {
+    min-height: 145px;
+    padding: 20px 15px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .yearLedger li:first-child {
+    padding-left: 15px;
+  }
+
+  .yearLedger li:nth-child(2) {
+    border-right: 0;
+  }
+
+  .yearLedger li:nth-child(3),
+  .yearLedger li:nth-child(4) {
+    border-bottom: 0;
+  }
+
+  .yearLedger li:last-child {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroDossier dl > div {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .methodology li {
+    grid-template-columns: 34px minmax(0, 1fr);
+  }
+
+  .methodology li > div {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .journeyMap {
+    min-height: 360px;
+  }
+
+  .yearLedger {
+    grid-template-columns: 1fr;
+  }
+
+  .yearLedger li {
+    border-right: 0;
+  }
+
+  .yearLedger li:nth-child(3) {
+    border-bottom: 1px solid var(--line);
+  }
+}
+
+
+/* ------------------------------------------------------------------ */
+/* GUARDA DE INTEGRAÇÃO — esta versão não depende do CSS antigo       */
+/* ------------------------------------------------------------------ */
+
+.page *,
+.page *::before,
+.page *::after {
+  box-sizing: border-box;
+}
+
+.heroDossier,
+.methodology,
+.territoryJourney,
+.governance,
+.yearLedger {
+  min-width: 0;
+}
+
+.methodology ol,
+.methodology li,
+.methodology li > div {
+  width: 100%;
+}
+
+.territoryJourney button {
+  font-family: inherit;
+}
+
+.journeyMapCanvas {
+  width: 100%;
+  height: 100%;
+  min-height: 590px;
+}
+
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .heroDossier {
+    min-height: 280px;
+  }
+
+  .core {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .territoryJourney {
+    grid-template-columns: 1fr;
+  }
+
+  .journeyPanel {
+    min-height: auto;
+  }
+
+  .journeyProgress {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 5px;
+  }
+
+  .journeyProgress button {
+    grid-template-columns: 1fr;
+    gap: 3px;
+    padding: 10px;
+    border-left: 0;
+    border-bottom: 3px solid rgba(255,255,255,.10);
+  }
+
+  .journeyProgress .journeyStepActive {
+    border-left-color: transparent;
+    border-bottom-color: var(--yellow);
+  }
+
+  .journeyMap,
+  .journeyMapCanvas {
+    min-height: 500px;
+  }
+
+  .governance {
+    grid-template-columns: 1fr;
+  }
+
+  .institutions {
+    border-left: 1px solid var(--line);
+    border-top: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .page {
+    --width: min(100% - 28px, 1220px);
+  }
+
+  .heroNarrative h1 {
+    font-size: clamp(2.45rem, 12vw, 3.25rem);
+  }
+
+  .journeyProgress {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .journeyMap,
+  .journeyMapCanvas {
+    min-height: 420px;
+  }
+
+  .yearLedger {
+    grid-template-columns: 1fr;
+  }
+
+  .yearLedger li,
+  .yearLedger li:first-child,
+  .yearLedger li:last-child {
+    min-height: auto;
+    padding: 18px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+}
+
+
+@media (max-width: 760px) {
+  .institutionsHeader {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .institutionGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .institutionGrid li {
+    grid-template-rows: 76px auto;
+    padding: 14px;
+  }
+
+  .institutionLogo {
+    height: 62px;
+  }
+}
+
+@media (max-width: 480px) {
+  .institutionGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Coordenação — bloco próprio com retratos                           */
+/* ------------------------------------------------------------------ */
+
+.leadership {
+  width: var(--width);
+  display: grid;
+  grid-template-columns: minmax(250px, .32fr) minmax(0, .68fr);
+  gap: 52px;
+  margin: 0 auto;
+  padding: 50px 0 42px;
+  border-top: 1px solid var(--line);
+}
+
+.leadershipHeader {
+  align-self: start;
+}
+
+.leadershipHeader h2,
+.institutionStripHeader h2 {
+  max-width: 430px;
+  margin: 0;
+  font-size: clamp(1.95rem, 2.7vw, 2.75rem);
+  font-weight: 830;
+  letter-spacing: -.045em;
+  line-height: 1.01;
+}
+
+.leadershipHeader > p:last-child {
+  max-width: 360px;
+  margin: 16px 0 0;
+  color: #6d8185;
+  font-size: .76rem;
+  line-height: 1.55;
+}
+
+.leaderGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.leaderCard {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 14px 34px rgba(21,58,64,.04);
+}
+
+.leaderPhoto {
+  position: relative;
+  height: 270px;
+  overflow: hidden;
+  background:
+    linear-gradient(145deg, rgba(11,129,154,.08), rgba(43,132,91,.07)),
+    #edf4f1;
+}
+
+.leaderPhoto img,
+.leaderFallback {
+  width: 100%;
+  height: 100%;
+}
+
+.leaderPhoto img {
+  display: block;
+  object-fit: cover;
+  object-position: center 22%;
+}
+
+.leaderFallback {
+  display: grid;
+  place-items: center;
+  color: rgba(21,58,64,.38);
+  font-size: 3rem;
+  font-weight: 850;
+  letter-spacing: -.06em;
+}
+
+.leaderInfo {
+  padding: 19px 20px 20px;
+}
+
+.leaderInfo > span {
+  display: block;
+  color: var(--green);
+  font-size: .59rem;
+  font-weight: 900;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+}
+
+.leaderInfo h3 {
+  margin: 6px 0 0;
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.18;
+}
+
+.leaderInfo p {
+  margin: 5px 0 0;
+  color: #73878a;
+  font-size: .66rem;
+}
+
+.leaderInfo a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  color: var(--teal);
+  font-size: .63rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.leaderInfo a:hover {
+  text-decoration: underline;
+}
+
+.leadershipSource {
+  grid-column: 2;
+  color: #8a9a9d;
+  font-size: .55rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Instituições — faixa/carrossel clicável                            */
+/* ------------------------------------------------------------------ */
+
+.institutionStrip {
+  width: var(--width);
+  margin: 0 auto;
+  padding: 34px 0 48px;
+  border-top: 1px solid var(--line);
+}
+
+.institutionStripHeader {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 20px;
+}
+
+.institutionStripHeader h2 {
+  max-width: none;
+  font-size: clamp(1.7rem, 2.25vw, 2.25rem);
+}
+
+.carouselControls {
+  display: flex;
+  gap: 7px;
+}
+
+.carouselControls button {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  color: var(--ink);
+  cursor: pointer;
+  background: rgba(255,255,255,.88);
+  border: 1px solid var(--line);
+}
+
+.carouselControls button:hover {
+  color: #fff;
+  background: var(--deep);
+  border-color: var(--deep);
+}
+
+.institutionRail {
+  display: grid;
+  grid-auto-columns: minmax(225px, 1fr);
+  grid-auto-flow: column;
+  gap: 12px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 1px 1px 8px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+}
+
+.institutionSlide {
+  min-width: 0;
+  padding: 20px 20px 15px;
+  color: inherit;
+  text-decoration: none;
+  background: rgba(255,255,255,.92);
+  border: 1px solid var(--line);
+  scroll-snap-align: start;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.institutionSlide:hover {
+  transform: translateY(-3px);
+  border-color: rgba(11,129,154,.25);
+  box-shadow: 0 14px 32px rgba(21,58,64,.07);
+}
+
+.institutionSlideLogo {
+  position: relative;
+  height: 82px;
+}
+
+.institutionSlideLogo img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.institutionSlideMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 14px;
+  padding-top: 11px;
+  border-top: 1px solid rgba(21,58,64,.075);
+}
+
+.institutionSlideMeta strong {
+  color: var(--ink);
+  font-size: .68rem;
+}
+
+.institutionSlideMeta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #718489;
+  font-size: .57rem;
+  white-space: nowrap;
+}
+
+/* A antiga governança combinada não é usada na página final. */
+.governance {
+  display: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* Refinamento final do mapa multiescala — 5 etapas                   */
+/* ------------------------------------------------------------------ */
+
+.journeyProgress {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.journeyProgress button {
+  min-width: 0;
+}
+
+.journeyProgress button span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ------------------------------------------------------------------ */
+/* Responsividade final                                                */
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 980px) {
+  .journeyProgress {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .leadership {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .leadershipSource {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 760px) {
+  .journeyProgress {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .journeyProgress button:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .leaderGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .leaderPhoto {
+    height: 320px;
+  }
+
+  .institutionStripHeader {
+    align-items: start;
+  }
+
+  .institutionRail {
+    grid-auto-columns: minmax(240px, 76vw);
+  }
+}
+
+@media (max-width: 480px) {
+  .leaderPhoto {
+    height: 285px;
+  }
+
+  .carouselControls {
+    display: none;
+  }
+}
+
+
+/* ================================================================== */
+/* FECHAMENTO DA PÁGINA PROJETO — 28/08/2026                          */
+/* ================================================================== */
+
+/* O seletor volta a ser uma lista editorial legível.
+   Cinco etapas não cabem horizontalmente no painel lateral. */
+.journeyProgress {
+  display: grid;
+  grid-template-columns: 1fr !important;
+  gap: 2px;
+}
+
+.journeyProgress button {
+  display: grid;
+  grid-template-columns: 35px minmax(0, 1fr);
+  min-height: 45px;
+  padding: 0 12px;
+}
+
+.journeyProgress button span {
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+  line-height: 1.2;
+}
+
+.journeyProgress button:last-child {
+  grid-column: auto !important;
+}
+
+/* Coordenação: retratos pequenos/médios, sem imagem hero. */
+.leadership {
+  padding: 46px 0 40px;
+}
+
+.leaderGrid {
+  gap: 14px;
+  align-self: start;
+}
+
+.leaderCard {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  min-height: 176px;
+  overflow: hidden;
+  background: rgba(255,255,255,.96);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 26px rgba(21,58,64,.035);
+}
+
+.leaderPhoto {
+  width: 132px;
+  height: 100%;
+  min-height: 176px;
+  background: #eaf1ee;
+}
+
+.leaderPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.leaderInfo {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px 18px 16px;
+}
+
+.leaderInfo > span {
+  color: var(--green);
+  font-size: .56rem;
+  font-weight: 900;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.leaderInfo h3 {
+  margin: 6px 0 0;
+  font-size: .91rem;
+  line-height: 1.18;
+}
+
+.leaderProfession {
+  margin: 5px 0 0 !important;
+  color: #61787c !important;
+  font-size: .64rem !important;
+  font-weight: 760;
+}
+
+.leaderDepartment {
+  max-width: 250px;
+  margin: 4px 0 0 !important;
+  color: #819194 !important;
+  font-size: .56rem !important;
+  line-height: 1.38;
+}
+
+.leaderLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 13px;
+  margin-top: 13px;
+}
+
+.leaderLinks a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 !important;
+  color: var(--teal);
+  font-size: .58rem;
+  font-weight: 820;
+  text-decoration: none;
+}
+
+.leaderLinks a:hover {
+  text-decoration: underline;
+}
+
+/* A nota pública "Fotografias: ..." foi removida do componente. */
+.leadershipSource {
+  display: none !important;
+}
+
+/* Instituições: assinatura leve no desktop; carrossel apenas quando necessário. */
+.institutionStrip {
+  padding: 31px 0 45px;
+}
+
+.institutionStripHeader {
+  margin-bottom: 16px;
+}
+
+.institutionStripHeader h2 {
+  font-size: clamp(1.45rem, 1.9vw, 1.9rem);
+}
+
+.institutionSlide {
+  padding: 16px 18px 13px;
+  border-color: rgba(21,58,64,.10);
+  box-shadow: none;
+}
+
+.institutionSlideLogo {
+  height: 72px;
+}
+
+.institutionSlideMeta {
+  margin-top: 11px;
+  padding-top: 9px;
+}
+
+@media (min-width: 981px) {
+  .carouselControls {
+    display: none;
+  }
+
+  .institutionRail {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    gap: 14px;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 980px) {
+  .journeyProgress {
+    grid-template-columns: 1fr !important;
+  }
+
+  .leaderGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .institutionRail {
+    grid-auto-columns: minmax(245px, 44vw);
+  }
+}
+
+@media (max-width: 760px) {
+  .journeyProgress {
+    grid-template-columns: 1fr !important;
+  }
+
+  .leaderGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .leaderCard {
+    grid-template-columns: 112px minmax(0, 1fr);
+    min-height: 158px;
+  }
+
+  .leaderPhoto {
+    width: 112px;
+    min-height: 158px;
+  }
+
+  .institutionRail {
+    grid-auto-columns: minmax(240px, 76vw);
+  }
+}
+
+@media (max-width: 480px) {
+  .leaderCard {
+    grid-template-columns: 96px minmax(0, 1fr);
+  }
+
+  .leaderPhoto {
+    width: 96px;
+  }
+
+  .leaderInfo {
+    padding: 14px 13px;
+  }
+}
+
+
+/* Fechamento visual — equilíbrio das marcas institucionais.
+   A UFRN possuía peso visual maior por ocupar mais área horizontal.
+   Mantém-se a proporção original e reduz-se apenas sua escala percebida. */
+.institutionLogoUfrn {
+  transform: scale(.84);
+  transform-origin: center;
+}

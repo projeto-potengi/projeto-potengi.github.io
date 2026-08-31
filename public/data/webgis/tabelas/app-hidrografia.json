@@ -1,0 +1,1 @@
+{"version":1,"layerId":"app-hidrografia","fields":["tipo","area_ha","fonte"],"rows":[{"id":"1","featureIndex":0,"title":"Nascente","values":{"tipo":"Nascente","area_ha":323.846588,"fonte":"Mapeamento realizado a partir do Código Florestal (2012)"}}]}

@@ -1,0 +1,399 @@
+{
+  "version": "2026-08-26",
+  "status": "completude_editorial_fechada",
+  "total": 18,
+  "publicationRule": "Publicar os 18 registros selecionados. Créditos individuais permanecem a confirmar. Quando houver pessoas identificáveis, a publicação depende de confirmação de autorização de uso de imagem.",
+  "selectionRule": "Conjunto representativo do território, validação em campo, educação ambiental, recuperação, áreas trabalhadas e monitoramento; não publicar inventário integral nem séries repetitivas.",
+  "items": [
+    {
+      "id": "foz-potengi-ponte-newton-navarro",
+      "title": "Foz do Rio Potengi e Ponte Newton Navarro",
+      "metas": [
+        1
+      ],
+      "group": "território",
+      "activity": "paisagem e contexto territorial",
+      "municipality": "Natal",
+      "date": null,
+      "sourceType": "pptx_media",
+      "sourceFile": "Resultados Potengi - Novembro de 2025..pptx",
+      "sourceMedia": "image72.JPG",
+      "sourceSlide": 32,
+      "publicFile": "foz-potengi-ponte-newton-navarro.jpg",
+      "alt": "Vista aérea da foz do Rio Potengi, com a Ponte Newton Navarro e a faixa litorânea",
+      "featured": true,
+      "credit": "a confirmar",
+      "rights": "sem pessoas identificáveis em primeiro plano"
+    },
+    {
+      "id": "rio-potengi-sao-tome-2022",
+      "title": "Rio Potengi em São Tomé",
+      "metas": [
+        1,
+        3
+      ],
+      "group": "território",
+      "activity": "reconhecimento territorial",
+      "municipality": "São Tomé",
+      "date": "2022-07-26",
+      "sourceType": "drive_original",
+      "sourceUrl": "https://drive.google.com/file/d/1Ajap-ImxHmmegd8CDTI3G9X7V1x5czwr/view?usp=drivesdk",
+      "sourceOriginalFile": "Rio Potengi em São Tomé - 26.07.2022.JPG",
+      "publicFile": "rio-potengi-sao-tome-2022.jpg",
+      "alt": "Vista ampla do Rio Potengi e da paisagem de São Tomé",
+      "featured": false,
+      "credit": "a confirmar",
+      "rights": "a confirmar"
+    },
+    {
+      "id": "equipe-nascente-potengi-2022",
+      "title": "Equipe do Projeto Potengi na nascente do rio Potengi",
+      "metas": [
+        3
+      ],
+      "group": "validação em campo",
+      "activity": "validação das áreas prioritárias",
+      "municipality": "Cerro Corá",
+      "date": "2022-07-26",
+      "sourceType": "drive_original",
+      "sourceUrl": "https://drive.google.com/file/d/1RN4XeyOtu3WZjDb426TRdgMplthL-Tew/view?usp=drivesdk",
+      "sourceOriginalFile": "Equipe do Projeto Potengi na nascente do rio Potengi - 26.07.2022.jpg",
+      "publicFile": "equipe-nascente-potengi-2022.jpg",
+      "alt": "Equipe do Projeto Potengi durante atividade de campo na nascente do rio Potengi",
+      "featured": true,
+      "credit": "a confirmar",
+      "rights": "confirmar autorização das pessoas"
+    },
+    {
+      "id": "oficina-educacao-ambiental-cerro-cora-2023",
+      "title": "Oficina de educação ambiental em Cerro Corá",
+      "metas": [
+        2,
+        7
+      ],
+      "group": "educação e mobilização",
+      "activity": "educação ambiental",
+      "municipality": "Cerro Corá",
+      "date": "2023-10-20",
+      "sourceType": "drive_original",
+      "sourceUrl": "https://drive.google.com/file/d/1wPgVndiEj_mZui9sNKVmK-V3667gktYx/view?usp=drivesdk",
+      "sourceOriginalFile": "20231020_133656.jpg",
+      "publicFile": "oficina-educacao-ambiental-cerro-cora-2023.jpg",
+      "alt": "Participantes em oficina de educação ambiental realizada em Cerro Corá",
+      "featured": true,
+      "credit": "a confirmar",
+      "rights": "confirmar autorização das pessoas"
+    },
+    {
+      "id": "cercamento-app-eloy-cerro-cora",
+      "title": "Cercamento na APP do Açude Eloy de Souza",
+      "metas": [
+        4,
+        5
+      ],
+      "group": "áreas trabalhadas",
+      "activity": "cercamento e proteção",
+      "municipality": "Cerro Corá",
+      "date": null,
+      "sourceType": "pptx_media",
+      "sourceFile": "Resultados Potengi - Novembro de 2025..pptx",
+      "sourceMedia": "image16.png",
+      "sourceSlide": 8,
+      "publicFile": "cercamento-app-eloy-cerro-cora.png",
+      "alt": "Cercamento implantado junto à área do Açude Eloy de Souza em Cerro Corá",
+      "featured": false,
+      "credit": "a confirmar",
+      "rights": "sem pessoas identificáveis em primeiro plano"
+    },
+    {
+      "id": "olheiro-capela-11",
+      "title": "Olheiro Capela 11",
+      "metas": [
+        4,
+        5
+      ],
+      "group": "áreas trabalhadas",
+      "activity": "recuperação e monitoramento",
+      "municipality": null,
+      "date": null,
+      "sourceType": "drive_original",
+      "sourceUrl": "https://drive.google.com/file/d/1R_1XRe1qVuVaAWkh7iGyVqY3ixuZLPGZ/view?usp=drivesdk",
+      "sourceOriginalFile": "Olheiro capela 11.jpg",
+      "publicFile": "olheiro-capela-11.jpg",
+      "alt": "Vista aérea do Olheiro Capela 11 e seu entorno vegetado",
+      "featured": false,
+      "credit": "a confirmar",
+      "rights": "a confirmar"
+    },
+    {
+      "id": "area-recuperacao-eaj-visao-aerea",
+      "title": "Área de recuperação na EAJ/UFRN",
+      "metas": [
+        4,
+        5
+      ],
+      "group": "áreas trabalhadas",
+      "activity": "recuperação ambiental",
+      "municipality": "Macaíba",
+      "date": null,
+      "sourceType": "pptx_media",
+      "sourceFile": "Resultados Potengi - Novembro de 2025..pptx",
+      "sourceMedia": "image35.JPG",
+      "sourceSlide": 14,
+      "publicFile": "area-recuperacao-eaj-visao-aerea.jpg",
+      "alt": "Vista aérea de área de recuperação ambiental na Escola Agrícola de Jundiaí",
+      "featured": true,
+      "credit": "a confirmar",
+      "rights": "sem pessoas identificáveis em primeiro plano"
+    },
+    {
+      "id": "equipe-atividade-plantio-eaj",
+      "title": "Equipe em atividade de plantio na EAJ/UFRN",
+      "metas": [
+        4,
+        7
+      ],
+      "group": "recuperação ambiental",
+      "activity": "plantio e implantação",
+      "municipality": "Macaíba",
+      "date": null,
+      "sourceType": "pptx_media",
+      "sourceFile": "Resultados Potengi - Novembro de 2025..pptx",
+      "sourceMedia": "image24.png",
+      "sourceSlide": 12,
+      "publicFile": "equipe-atividade-plantio-eaj.png",
+      "alt": "Equipe do Projeto Potengi durante atividade de plantio na Escola Agrícola de Jundiaí",
+      "featured": false,
+      "credit": "a confirmar",
+      "rights": "confirmar autorização das pessoas"
+    },
+    {
+      "id": "oficina-plantio-eaj",
+      "title": "Oficina prática de plantio na EAJ/UFRN",
+      "metas": [
+        4,
+        7
+      ],
+      "group": "educação e mobilização",
+      "activity": "oficina de plantio e capacitação",
+      "municipality": "Macaíba",
+      "date": null,
+      "sourceType": "pptx_media",
+      "sourceFile": "Resultados Potengi - Novembro de 2025..pptx",
+      "sourceMedia": "image26.png",
+      "sourceSlide": 12,
+      "publicFile": "oficina-plantio-eaj.png",
+      "alt": "Atividade prática de plantio realizada na Escola Agrícola de Jundiaí",
+      "featured": false,
+      "credit": "a confirmar",
+      "rights": "confirmar autorização das pessoas"
+    },
+    {
+      "id": "implantacao-renques-2024",
+      "title": "Implantação de renques",
+      "metas": [
+        4,
+        7
+      ],
+      "group": "recuperação ambiental",
+      "activity": "oficina prática de recuperação",
+      "municipality": "Macaíba",
+      "date": "2024-06-26",
+      "sourceType": "drive_original",
+      "sourceUrl": "https://drive.google.com/file/d/1egdWwBJtSkCkyskneriUvlEwj6hVqLQj/view?usp=drivesdk",
+      "sourceOriginalFile": "20240626_152139.jpg",
+      "publicFile": "implantacao-renques-2024.jpg",
+      "alt": "Atividade de implantação de renques durante oficina prática",
+      "featured": false,
+      "credit": "a confirmar",
+      "rights": "a confirmar"
+    },
+    {
+      "id": "preparo-terreno-renques-eaj",
+      "title": "Preparo do terreno para implantação de renques",
+      "metas": [
+        4
+      ],
+      "group": "recuperação ambiental",
+      "activity": "preparo do terreno",
+      "municipality": "Macaíba",
+      "date": null,
+      "sourceType": "pptx_media",
+      "sourceFile": "Resultados Potengi - Novembro de 2025..pptx",
+      "sourceMedia": "image44.jpeg",
+      "sourceSlide": 18,
+      "publicFile": "preparo-terreno-renques-eaj.jpg",
+      "alt": "Máquina agrícola realizando preparo do terreno para implantação de técnicas de recuperação na EAJ/UFRN",
+      "featured": false,
+      "credit": "a confirmar",
+      "rights": "sem pessoas identificáveis em primeiro plano"
+    },
+    {
+      "id": "palma-implantada-2024",
+      "title": "Palma implantada em ação de recuperação",
+      "metas": [
+        4,
+        7
+      ],
+      "group": "recuperação ambiental",
+      "activity": "técnica de recuperação",
+      "municipality": "Macaíba",
+      "date": "2024-07-15",
+      "sourceType": "drive_original",
+      "sourceUrl": "https://drive.google.com/file/d/1gnEB8aiXpn2888_qkJt4MWddPMIAUXUi/view?usp=drivesdk",
+      "sourceOriginalFile": "20240715_093623.jpg",
+      "publicFile": "palma-implantada-2024.jpg",
+      "alt": "Detalhe de palma implantada como técnica de recuperação ambiental",
+      "featured": false,
+      "credit": "a confirmar",
+      "rights": "sem pessoas identificáveis em primeiro plano"
+    },
+    {
+      "id": "barramento-pedras-eaj",
+      "title": "Barramento de pedras para controle de processos erosivos",
+      "metas": [
+        4
+      ],
+      "group": "recuperação ambiental",
+      "activity": "controle de processos erosivos",
+      "municipality": "Macaíba",
+      "date": null,
+      "sourceType": "pptx_media",
+      "sourceFile": "Resultados Potengi - Novembro de 2025..pptx",
+      "sourceMedia": "image49.jpeg",
+      "sourceSlide": 20,
+      "publicFile": "barramento-pedras-eaj.jpg",
+      "alt": "Barramento de pedras construído em área da EAJ/UFRN para controle de processos erosivos",
+      "featured": false,
+      "credit": "a confirmar",
+      "rights": "a confirmar se houver pessoas identificáveis na versão ampliada"
+    },
+    {
+      "id": "parcelas-plantio-visao-aerea",
+      "title": "Parcelas de plantio em vista aérea",
+      "metas": [
+        4,
+        5
+      ],
+      "group": "áreas trabalhadas",
+      "activity": "implantação e leitura espacial das intervenções",
+      "municipality": "Macaíba",
+      "date": null,
+      "sourceType": "pptx_media",
+      "sourceFile": "Resultados Potengi - Novembro de 2025..pptx",
+      "sourceMedia": "image33.jpeg",
+      "sourceSlide": null,
+      "publicFile": "parcelas-plantio-visao-aerea.jpg",
+      "alt": "Vista aérea de parcelas de plantio em área trabalhada pelo Projeto Potengi",
+      "featured": false,
+      "credit": "a confirmar",
+      "rights": "sem pessoas identificáveis em primeiro plano"
+    },
+    {
+      "id": "monitoramento-em-campo",
+      "title": "Monitoramento em campo",
+      "metas": [
+        5
+      ],
+      "group": "monitoramento",
+      "activity": "acompanhamento das ações de recuperação",
+      "municipality": null,
+      "date": null,
+      "sourceType": "pptx_media",
+      "sourceFile": "Resultados Potengi - Novembro de 2025..pptx",
+      "sourceMedia": "image31.png",
+      "sourceSlide": 13,
+      "publicFile": "monitoramento-em-campo.png",
+      "alt": "Equipe em atividade de monitoramento de campo do Projeto Potengi",
+      "featured": true,
+      "credit": "a confirmar",
+      "rights": "confirmar autorização das pessoas"
+    },
+    {
+      "id": "regeneracao-vegetacao-2024",
+      "title": "Regeneração e estabelecimento da vegetação",
+      "metas": [
+        4,
+        7
+      ],
+      "group": "monitoramento",
+      "activity": "acompanhamento da recuperação",
+      "municipality": "Macaíba",
+      "date": "2024-08-12",
+      "sourceType": "drive_original",
+      "sourceUrl": "https://drive.google.com/file/d/1eYZNrE-xtgkWX8O2eDekl4k419Mlnc85/view?usp=drivesdk",
+      "sourceOriginalFile": "20240812_104912.jpg",
+      "publicFile": "regeneracao-vegetacao-2024.jpg",
+      "alt": "Vegetação em processo de regeneração em área trabalhada pelo projeto",
+      "featured": false,
+      "credit": "a confirmar",
+      "rights": "sem pessoas identificáveis em primeiro plano"
+    },
+    {
+      "id": "cercamento-monitorado-2025",
+      "title": "Cercamento monitorado em área de recuperação",
+      "metas": [
+        5
+      ],
+      "group": "monitoramento",
+      "activity": "monitoramento",
+      "municipality": null,
+      "date": "2025-02-14",
+      "sourceType": "drive_original",
+      "sourceUrl": "https://drive.google.com/file/d/1zfqwbclh6GjFVNC0_9umnbBIr7aPgstZ/view?usp=drivesdk",
+      "sourceOriginalFile": "TimePhoto_20250214_092432.jpg",
+      "publicFile": "cercamento-monitorado-2025.jpg",
+      "alt": "Cercamento de proteção registrado durante monitoramento de campo",
+      "featured": false,
+      "credit": "a confirmar",
+      "rights": "sem pessoas identificáveis em primeiro plano"
+    },
+    {
+      "id": "fazenda-mundo-novo-visao-aerea",
+      "title": "Fazenda Mundo Novo em vista aérea",
+      "metas": [
+        4,
+        5
+      ],
+      "group": "áreas trabalhadas",
+      "activity": "acompanhamento da área de recuperação",
+      "municipality": "São Tomé",
+      "date": null,
+      "sourceType": "pptx_media",
+      "sourceFile": "Resultados Potengi - Novembro de 2025..pptx",
+      "sourceMedia": "image60.png",
+      "sourceSlide": 24,
+      "publicFile": "fazenda-mundo-novo-visao-aerea.png",
+      "alt": "Vista aérea da Fazenda Mundo Novo, área trabalhada pelo Projeto Potengi em São Tomé",
+      "featured": true,
+      "credit": "a confirmar",
+      "rights": "sem pessoas identificáveis em primeiro plano"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceMedia": "image11.png",
+      "reason": "contém tabela com total antigo de 17,05 ha"
+    },
+    {
+      "sourceMedia": "image12.png",
+      "reason": "captura de interface"
+    },
+    {
+      "sourceMedia": "image14.png",
+      "reason": "captura de interface"
+    },
+    {
+      "sourceMedia": "image59.png",
+      "reason": "captura de interface"
+    },
+    {
+      "group": "portões e placas repetitivos",
+      "reason": "redundância visual; não publicar série"
+    },
+    {
+      "group": "fotografias sem contexto mínimo",
+      "reason": "sem local/data/atividade/crédito suficientes"
+    }
+  ]
+}

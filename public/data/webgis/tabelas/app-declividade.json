@@ -1,0 +1,1 @@
+{"version":1,"layerId":"app-declividade","fields":["declividade","area_ha","fonte"],"rows":[{"id":"1","featureIndex":0,"title":"APP por declividade","values":{"declividade":45,"area_ha":27.54624,"fonte":"Mapeamento a partir do MDE (ALOS PALSAR - JAXA/METI 2010) e Código Florestal Brasileiro (2012)"}}]}

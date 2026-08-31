@@ -1,0 +1,27 @@
+.next/
+out/
+node_modules/
+npm-debug.log*
+.env*
+data/geospatial/originals/
+
+# Arquivos gerados
+*.tsbuildinfo
+*.log
+
+# Materiais temporários e saídas de diagnóstico
+tmp/
+artifacts/
+
+# Saídas de testes
+coverage/
+playwright-report/
+test-results/
+public/acervo/resultados-potengi-novembro-2025.pptx
+
+# Fontes binárias de origem — preservadas localmente, não necessárias ao build
+fontes/**/*.pptx
+fontes/**/*.pdf
+fontes/**/*.jpg
+fontes/**/*.jpeg
+fontes/**/*.png
