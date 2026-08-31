@@ -3,14 +3,14 @@
   top: 0;
   z-index: 1000;
   width: 100%;
-  color: #153a40;
+  color: var(--color-ink);
   background: rgba(255, 255, 255, 0.97);
   border-bottom: 1px solid rgba(21, 58, 64, 0.10);
   backdrop-filter: blur(14px);
 }
 
 .headerInner {
-  width: min(1240px, calc(100% - 42px));
+  width: min(var(--container-wide), calc(100% - (2 * var(--page-gutter))));
   min-height: 80px;
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -24,7 +24,7 @@
   min-width: 218px;
   align-items: center;
   gap: 10px;
-  color: #143b43;
+  color: var(--color-ink-deep);
   text-decoration: none;
 }
 
@@ -665,7 +665,7 @@
 
 @media (max-width: 1120px) {
   .headerInner {
-    width: min(100% - 28px, 1240px);
+    width: min(100% - (2 * var(--page-gutter)), var(--container-wide));
     grid-template-columns: auto 1fr auto;
   }
 
@@ -836,6 +836,29 @@
   .searchFooter {
     flex-direction: column;
     gap: 3px;
+  }
+}
+
+/* Padronizacao visual global - Etapa 1. */
+.brand small {
+  color: var(--color-muted);
+  font-size: .75rem;
+}
+
+.navigation > a {
+  color: var(--color-muted);
+}
+
+:global(:focus-visible) {
+  outline-color: var(--focus-ring);
+}
+
+@media (max-width: 900px) {
+  .navigation > a,
+  .mobileUtilities .searchTrigger,
+  .mobileUtilities .accessibilityTrigger,
+  .menuButton {
+    min-height: 44px;
   }
 }
 
@@ -1179,5 +1202,39 @@
     right: 10px;
     left: 10px;
     width: auto;
+  }
+}
+
+/* Mantem o piso tipografico apos o bloco de polimento visual. */
+.navigation > a,
+.searchTrigger,
+.mobileUtilities .desktopSrOnly,
+.skipLink,
+.dialogHeader span,
+.searchField button,
+.searchIntro p,
+.searchSuggestions > span,
+.searchIntro button,
+.resultCount,
+.resultCopy small,
+.resultCopy em,
+.noResults p,
+.searchFooter,
+.accessibilityPanel header span,
+.accessibilityGroup > span,
+.fontControls button,
+.accessibilityOptions strong,
+.accessibilityOptions small,
+.resetPreferences,
+.preferenceNote {
+  font-size: .75rem;
+}
+
+@media (max-width: 900px) {
+  .navigation > a,
+  .mobileUtilities .searchTrigger,
+  .mobileUtilities .accessibilityTrigger,
+  .menuButton {
+    min-height: 44px;
   }
 }

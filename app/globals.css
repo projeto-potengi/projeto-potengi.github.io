@@ -1,20 +1,80 @@
 @import "ol/ol.css";
 
 :root {
-  --ink: #17333a;
-  --muted: #5b7075;
-  --paper: #f7fbf8;
-  --panel: #ffffff;
+  --ink: var(--color-ink);
+  --muted: var(--color-muted);
+  --paper: var(--color-paper);
+  --panel: var(--color-surface);
   --water: #18b8e6;
-  --water-deep: #0b7994;
+  --water-deep: var(--color-teal-deep);
   --leaf: #31a354;
-  --leaf-dark: #177047;
-  --sun: #f2cf28;
+  --leaf-dark: var(--color-green);
+  --sun: var(--color-yellow);
   --earth: #7a8a31;
   --alert: #bf3b37;
-  --line: rgba(23, 51, 58, 0.14);
+  --line: var(--color-line);
   --soft-line: rgba(24, 184, 230, 0.18);
   --shadow: 0 22px 70px rgba(14, 86, 103, 0.14);
+
+  /* Etapa 1 — fundamentos visuais compartilhados. */
+  --color-ink: #153a40;
+  --color-ink-deep: #123f45;
+  --color-muted: #596f74;
+  --color-teal: #0b819a;
+  --color-teal-deep: #086b80;
+  --color-green: #2b845b;
+  --color-yellow: #d6aa22;
+  --color-yellow-ink: #715700;
+  --color-paper: #f7faf8;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f1f5f0;
+  --color-line: rgba(21, 58, 64, 0.13);
+  --font-sans: "Segoe UI Variable", "Segoe UI", "Inter", Arial, sans-serif;
+  --container-page: 1220px;
+  --container-wide: 1240px;
+  --container-reading: 760px;
+  --page-gutter: clamp(16px, 4vw, 24px);
+  --radius-control: 4px;
+  --radius-card: 8px;
+  --radius-panel: 14px;
+  --focus-ring: #0b819a;
+  --page-entry-top: 48px;
+  --page-entry-bottom: 36px;
+  --page-title-size: clamp(2.7rem, 4.35vw, 4.45rem);
+  --page-title-leading: .97;
+  --page-title-tracking: -.045em;
+  --page-title-weight: 850;
+  --section-title-size: clamp(1.95rem, 2.7vw, 2.75rem);
+  --section-title-leading: 1.02;
+  --section-title-tracking: -.04em;
+  --section-title-weight: 830;
+  --subtitle-size: clamp(1.2rem, 1.7vw, 1.5rem);
+  --subtitle-leading: 1.28;
+  --subtitle-tracking: -.018em;
+  --subtitle-weight: 720;
+  --eyebrow-size: .75rem;
+  --eyebrow-leading: 1.2;
+  --eyebrow-tracking: .12em;
+  --eyebrow-weight: 900;
+  --lead-size: clamp(1rem, 1.25vw, 1.15rem);
+  --lead-leading: 1.55;
+  --lead-tracking: 0;
+  --lead-weight: 400;
+  --body-size: .9375rem;
+  --body-leading: 1.62;
+  --body-tracking: 0;
+  --body-weight: 400;
+  --aux-size: .8125rem;
+  --aux-leading: 1.5;
+  --aux-tracking: 0;
+  --aux-weight: 700;
+  --meta-size: .75rem;
+  --meta-leading: 1.4;
+  --meta-tracking: .01em;
+  --meta-weight: 650;
+  --editorial-background:
+    radial-gradient(circle at 8% 6%, rgba(24, 184, 230, .045), transparent 28rem),
+    linear-gradient(180deg, #f8fbf9 0%, #f7faf8 52%, #fbfcfa 100%);
 }
 
 * {
@@ -22,18 +82,23 @@
 }
 
 html {
-  background: var(--paper);
+  background: var(--color-paper);
 }
 
 body {
   margin: 0;
-  color: var(--ink);
-  background:
-    radial-gradient(circle at 8% 6%, rgba(24, 184, 230, 0.15), transparent 28rem),
-    linear-gradient(180deg, #f7fbf8 0%, #eef8f2 50%, #f7fbf8 100%);
-  font-family: "Segoe UI", "Inter", Arial, sans-serif;
+  color: var(--color-ink);
+  background: var(--editorial-background);
+  font-family: var(--font-sans);
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-sans);
 }
 
 a {
@@ -51,7 +116,7 @@ button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 a:focus-visible {
-  outline: 3px solid rgba(242, 207, 40, 0.78);
+  outline: 3px solid var(--focus-ring);
   outline-offset: 3px;
 }
 
@@ -10307,4 +10372,359 @@ main:has(.catalog-shell-maps) .compact-hero p:not(.eyebrow) {
   .results-map-facts span { padding-left: 0; border-right: 0; }
   .results-goal-header { padding: 23px 20px; }
   .results-goal-content > section { padding: 21px 19px; }
+}
+
+/* ========================================================================== */
+/* PADRONIZACAO VISUAL GLOBAL - ETAPA 1                                      */
+/* Ajustes exclusivamente visuais; composicoes e comportamentos preservados.  */
+/* ========================================================================== */
+
+.rpf-home {
+  --rpf-width: min(var(--container-page), calc(100% - (2 * var(--page-gutter))));
+  --rpf-ink: var(--color-ink);
+  --rpf-muted: var(--color-muted);
+  --rpf-blue: var(--color-teal);
+  --rpf-blue-deep: var(--color-teal-deep);
+  --rpf-green: var(--color-green);
+  --rpf-yellow: var(--color-yellow);
+  --rpf-line: var(--color-line);
+  --rpf-paper: var(--color-paper);
+}
+
+.page-main > .page-hero,
+.page-main > .catalog-shell,
+.catalog-shell-maps,
+.records-hero,
+.records-process,
+.records-gallery-heading,
+.records-mosaic,
+.records-closing {
+  width: min(var(--container-page), calc(100% - (2 * var(--page-gutter))));
+}
+
+.catalog-shell-maps {
+  --maps-blue: var(--color-teal);
+  --maps-blue-deep: var(--color-teal-deep);
+  --maps-green: var(--color-green);
+  --maps-ink: var(--color-ink);
+  --maps-muted: var(--color-muted);
+  --maps-line: var(--color-line);
+}
+
+.records-page {
+  --records-ink: var(--color-ink);
+  --records-muted: var(--color-muted);
+  --records-line: var(--color-line);
+  --records-blue: var(--color-teal);
+  --records-green: var(--color-green);
+  --records-yellow: var(--color-yellow);
+}
+
+.potengi-webgis {
+  --wg-ink: var(--color-ink);
+  --wg-muted: var(--color-muted);
+  --wg-blue: var(--color-teal);
+  --wg-blue-deep: var(--color-teal-deep);
+  --wg-green: var(--color-green);
+  --wg-line: rgba(21, 58, 64, 0.18);
+}
+
+/* Microtextos editoriais e operacionais nunca ficam abaixo de 12 px. */
+.rpf-hero-media figcaption,
+.rpf-stats small,
+.rpf-map-base > span,
+.rpf-map-legend,
+.rpf-archive-label,
+.rpf-brand-heading,
+.catalog-shell .archive-type,
+.catalog-shell .catalog-count,
+.catalog-shell .catalog-details,
+.catalog-shell .catalog-card small,
+.catalog-shell-maps .featured-editorial-meta dt,
+.catalog-shell-maps .featured-editorial-meta dd,
+.records-eyebrow,
+.record-tile-copy small,
+.record-lightbox-count,
+.record-lightbox-context dt,
+.webgis-eyebrow,
+.layer-note,
+.active-layers li > span:nth-child(2),
+.active-layers > p,
+.layer-status,
+.search-results span,
+.feature-panel dt,
+.feature-panel dd,
+.overlap-nav,
+.legend-items > span,
+.legend-classified span,
+.legend-classified summary strong,
+.legend-classified summary small,
+.map-loading,
+.map-toast,
+.map-readouts,
+.map-credits,
+.webgis-footer-note,
+.webgis-footer-note label {
+  font-size: .75rem;
+}
+
+.catalog-shell-maps .catalog-card .catalog-details dt,
+.catalog-shell-maps .catalog-card .catalog-details dd,
+.catalog-shell-maps .catalog-card small,
+.catalog-shell-maps .catalog-card .archive-type,
+.catalog-shell-maps .catalog-card .card-actions a {
+  font-size: .75rem;
+}
+
+/* O foco usa a mesma assinatura em superficies claras e escuras. */
+.potengi-webgis button:focus-visible,
+.potengi-webgis input:focus-visible,
+.potengi-webgis select:focus-visible,
+.record-lightbox-close:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.rpf-button,
+.catalog-shell input,
+.catalog-shell select,
+.catalog-shell button,
+.catalog-shell .card-actions a,
+.potengi-webgis input,
+.potengi-webgis select,
+.potengi-webgis button {
+  border-radius: var(--radius-control);
+}
+
+@media (max-width: 760px) {
+  .rpf-button,
+  .rpf-map-contexts button,
+  .rpf-map-fit,
+  .featured-rail-controls button,
+  .featured-map-toolbar button,
+  .featured-map-expand,
+  .catalog-shell .card-actions a,
+  .catalog-shell .catalog-more button,
+  .catalog-shell input,
+  .catalog-shell select,
+  .potengi-webgis .toolbar-group button,
+  .potengi-webgis .mobile-map-actions button,
+  .potengi-webgis .webgis-legend > button {
+    min-height: 44px;
+  }
+
+  .featured-rail-controls button,
+  .featured-map-toolbar button,
+  .rpf-map-fit,
+  .potengi-webgis .toolbar-group button {
+    min-width: 44px;
+  }
+
+  .catalog-shell-maps,
+  .catalog-shell-maps .featured-editorial,
+  .catalog-shell-maps .featured-editorial-meta,
+  .catalog-shell-maps .featured-editorial-meta dl,
+  .catalog-shell-maps .featured-editorial-meta dl div {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .catalog-shell-maps .featured-editorial-meta dt,
+  .catalog-shell-maps .featured-editorial-meta dd {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* ========================================================================== */
+/* PADRONIZACAO VISUAL GLOBAL - ETAPA 2                                      */
+/* Entrada editorial e hierarquia compartilhadas, sem alterar composicao.     */
+/* ========================================================================== */
+
+main:has(.catalog-shell-maps) {
+  padding-top: 0;
+  background: var(--editorial-background);
+}
+
+.rpf-home {
+  font-family: var(--font-sans);
+  background: var(--editorial-background);
+}
+
+.records-page {
+  font-family: var(--font-sans);
+  background: var(--editorial-background);
+}
+
+main:has(.catalog-shell-maps) .compact-hero {
+  margin-bottom: 40px;
+  padding: var(--page-entry-top) 0 var(--page-entry-bottom);
+}
+
+main:has(.catalog-shell-maps) .compact-hero .eyebrow {
+  margin-bottom: 10px;
+  color: var(--color-green);
+  font-size: .75rem;
+  font-weight: var(--eyebrow-weight);
+  line-height: var(--eyebrow-leading);
+  letter-spacing: var(--eyebrow-tracking);
+}
+
+main:has(.catalog-shell-maps) .compact-hero h1 {
+  max-width: 980px;
+  margin-bottom: 18px;
+  color: var(--color-ink);
+  font-size: var(--page-title-size);
+  font-weight: var(--page-title-weight);
+  line-height: var(--page-title-leading);
+  letter-spacing: var(--page-title-tracking);
+}
+
+main:has(.catalog-shell-maps) .compact-hero p:not(.eyebrow) {
+  max-width: var(--container-reading);
+  color: var(--color-muted);
+  font-size: var(--lead-size);
+  font-weight: var(--lead-weight);
+  line-height: var(--lead-leading);
+  letter-spacing: var(--lead-tracking);
+}
+
+.catalog-shell-maps {
+  margin-top: 0;
+}
+
+.catalog-shell-maps .featured-atlas {
+  margin-bottom: 52px;
+}
+
+.catalog-shell-maps .featured-atlas-heading {
+  gap: 32px;
+}
+
+.catalog-shell-maps .featured-atlas-heading h2,
+.catalog-shell-maps .catalog-intro h2 {
+  color: var(--color-ink);
+  font-size: var(--section-title-size);
+  font-weight: var(--section-title-weight);
+  line-height: var(--section-title-leading);
+  letter-spacing: var(--section-title-tracking);
+}
+
+.catalog-shell-maps .featured-atlas-heading p:not(.eyebrow),
+.catalog-shell-maps .catalog-intro > p {
+  color: var(--color-muted);
+  font-size: var(--body-size);
+  font-weight: var(--body-weight);
+  line-height: var(--body-leading);
+  letter-spacing: var(--body-tracking);
+}
+
+.catalog-shell-maps .catalog-filter-search input,
+.catalog-shell-maps .catalog-filter-select select,
+.catalog-shell-maps .webgis-only-filter {
+  min-height: 42px;
+  border-color: var(--color-line);
+  border-radius: var(--radius-control);
+  background: rgba(255, 255, 255, .92);
+}
+
+@media (max-width: 760px) {
+  main:has(.catalog-shell-maps) .compact-hero {
+    margin-bottom: 32px;
+    padding: 32px 0 28px;
+  }
+
+  main:has(.catalog-shell-maps) .compact-hero h1 {
+    font-size: clamp(2.4rem, 11vw, 3.45rem);
+  }
+
+  .catalog-shell-maps .featured-atlas {
+    margin-bottom: 44px;
+  }
+
+  .catalog-shell-maps .featured-atlas-heading {
+    gap: 16px;
+  }
+}
+
+/* Tipografia funcional compartilhada — Inicio e Registros. */
+.rpf-hero-copy h1,
+.records-hero h1 {
+  font-size: var(--page-title-size);
+  font-weight: var(--page-title-weight);
+  line-height: var(--page-title-leading);
+  letter-spacing: var(--page-title-tracking);
+}
+
+.rpf-section-heading h2,
+.rpf-webgis-copy h2,
+.records-gallery-heading h2 {
+  font-size: var(--section-title-size);
+  font-weight: var(--section-title-weight);
+  line-height: var(--section-title-leading);
+  letter-spacing: var(--section-title-tracking);
+}
+
+.rpf-front h3,
+.rpf-recovery-copy h3,
+.records-closing > p {
+  font-size: var(--subtitle-size);
+  font-weight: var(--subtitle-weight);
+  line-height: var(--subtitle-leading);
+  letter-spacing: var(--subtitle-tracking);
+}
+
+.rpf-kicker,
+.records-eyebrow,
+.records-closing > span {
+  font-size: var(--eyebrow-size);
+  font-weight: var(--eyebrow-weight);
+  line-height: var(--eyebrow-leading);
+  letter-spacing: var(--eyebrow-tracking);
+}
+
+.rpf-lead,
+.records-hero-copy > p:not(.records-eyebrow) {
+  font-size: var(--lead-size);
+  font-weight: var(--lead-weight);
+  line-height: var(--lead-leading);
+  letter-spacing: var(--lead-tracking);
+}
+
+.rpf-front p,
+.rpf-webgis-copy > p:not(.rpf-kicker),
+.rpf-recovery-copy > p:not(.rpf-kicker),
+.records-process-copy > p:last-child,
+.records-gallery-heading > p {
+  font-size: var(--body-size);
+  font-weight: var(--body-weight);
+  line-height: var(--body-leading);
+  letter-spacing: var(--body-tracking);
+}
+
+.rpf-stats span,
+.rpf-recovery-bridge span,
+.records-journey-labels strong {
+  font-size: var(--aux-size);
+  font-weight: var(--aux-weight);
+  line-height: var(--aux-leading);
+  letter-spacing: var(--aux-tracking);
+}
+
+.rpf-stats small,
+.rpf-front-meta small,
+.rpf-archive-copy small,
+.rpf-record-overlay > small,
+.rpf-doc-copy > small,
+.record-tile-caption small,
+.records-hero-photo figcaption {
+  font-size: var(--meta-size);
+  line-height: var(--meta-leading);
+  letter-spacing: var(--meta-tracking);
+}
+
+@media (max-width: 760px) {
+  .rpf-hero-copy h1,
+  .records-hero h1 {
+    font-size: clamp(2.4rem, 11vw, 3.45rem);
+  }
 }

@@ -1,19 +1,17 @@
 .page {
-  --ink: #153a40;
-  --muted: #687d81;
-  --teal: #0b819a;
-  --green: #2b845b;
-  --deep: #123f45;
-  --yellow: #d6aa22;
-  --line: rgba(21,58,64,.13);
-  --paper: #f7faf8;
-  --width: min(1220px, calc(100% - 48px));
+  --ink: var(--color-ink);
+  --muted: var(--color-muted);
+  --teal: var(--color-teal);
+  --green: var(--color-green);
+  --deep: var(--color-ink-deep);
+  --yellow: var(--color-yellow);
+  --line: var(--color-line);
+  --paper: var(--color-paper);
+  --width: min(var(--container-page), calc(100% - (2 * var(--page-gutter))));
   overflow: hidden;
   color: var(--ink);
-  background:
-    radial-gradient(circle at 7% 6%, rgba(59,197,221,.095), transparent 23%),
-    radial-gradient(circle at 95% 20%, rgba(63,150,111,.045), transparent 24%),
-    var(--paper);
+  font-family: var(--font-sans);
+  background: var(--editorial-background);
 }
 
 .kicker,
@@ -732,7 +730,7 @@
 
 @media (max-width: 760px) {
   .page {
-    --width: min(100% - 30px, 1220px);
+    --width: min(100% - (2 * var(--page-gutter)), var(--container-page));
   }
 
   .hero {
@@ -950,7 +948,7 @@
 
 @media (max-width: 680px) {
   .page {
-    --width: min(100% - 28px, 1220px);
+    --width: min(100% - (2 * var(--page-gutter)), var(--container-page));
   }
 
   .heroNarrative h1 {
@@ -1553,4 +1551,149 @@
 .institutionLogoUfrn {
   transform: scale(.84);
   transform-origin: center;
+}
+
+/* Padronizacao visual global - Etapa 1. */
+.kicker,
+.kickerLight,
+.heroDossier dt,
+.heroDossier dd,
+.objective > span,
+.methodology header > span,
+.methodology li > b,
+.methodology li strong,
+.methodology li span,
+.journeyProgress button b,
+.journeyProgress button span,
+.journeyNarrative > span,
+.journeyNext,
+.journeyNote,
+.mapStageBadge b,
+.mapStageBadge span,
+.mapCredit,
+.people span,
+.institutionsHeader > p:last-child,
+.institutionGrid span,
+.yearLedger span,
+.leaderInfo > span,
+.leaderProfession,
+.leaderDepartment,
+.leaderLinks a,
+.leadershipSource,
+.institutionSlideMeta strong,
+.institutionSlideMeta span {
+  font-size: .75rem !important;
+}
+
+.core,
+.territory,
+.leadership,
+.institutionStrip,
+.trajectory {
+  scroll-margin-top: 96px;
+}
+
+@media (max-width: 760px) {
+  .journeyProgress button,
+  .journeyNext,
+  .leaderLinks a,
+  .carouselControls button {
+    min-height: 44px;
+  }
+
+  .carouselControls button {
+    min-width: 44px;
+  }
+}
+
+/* Padronizacao visual global - Etapa 2. */
+.hero {
+  padding: var(--page-entry-top) 0 40px;
+}
+
+.heroNarrative h1 {
+  font-size: var(--page-title-size);
+  line-height: var(--page-title-leading);
+  letter-spacing: var(--page-title-tracking);
+}
+
+.kicker,
+.kickerLight {
+  margin-bottom: 10px;
+  font-size: var(--eyebrow-size);
+  font-weight: var(--eyebrow-weight);
+  line-height: var(--eyebrow-leading);
+  letter-spacing: var(--eyebrow-tracking);
+}
+
+.lead {
+  max-width: var(--container-reading);
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: var(--lead-size);
+  font-weight: var(--lead-weight);
+  line-height: var(--lead-leading);
+  letter-spacing: var(--lead-tracking);
+}
+
+.core {
+  padding: 48px 0;
+}
+
+.territory {
+  padding: 50px 0 54px;
+}
+
+.leadership {
+  padding: 46px 0 42px;
+}
+
+.institutionStrip {
+  padding: 36px 0 46px;
+}
+
+.trajectory {
+  padding: 48px 0 54px;
+}
+
+.coreStatement h2,
+.territoryHeader h2,
+.leadershipHeader h2,
+.trajectory h2 {
+  font-size: var(--section-title-size);
+  font-weight: var(--section-title-weight);
+  line-height: var(--section-title-leading);
+  letter-spacing: var(--section-title-tracking);
+}
+
+.territoryHeader > p:last-child,
+.leadershipHeader > p:last-child {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: var(--body-size);
+  font-weight: var(--body-weight);
+  line-height: var(--body-leading);
+  letter-spacing: var(--body-tracking);
+}
+
+@media (max-width: 760px) {
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .heroNarrative h1 {
+    font-size: clamp(2.4rem, 11vw, 3.45rem);
+  }
+
+  .core,
+  .territory,
+  .leadership,
+  .trajectory {
+    padding-block: 40px;
+  }
+
+  .institutionStrip {
+    padding-block: 32px 40px;
+  }
 }

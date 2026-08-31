@@ -1,21 +1,19 @@
 .page {
-  --ink: #153a40;
-  --muted: #687c80;
-  --teal: #0c7e98;
-  --green: #2b845b;
-  --deep: #123f45;
-  --yellow: #d6aa22;
-  --paper: #f7faf8;
+  --ink: var(--color-ink);
+  --muted: var(--color-muted);
+  --teal: var(--color-teal);
+  --green: var(--color-green);
+  --deep: var(--color-ink-deep);
+  --yellow: var(--color-yellow);
+  --paper: var(--color-paper);
   --white: #ffffff;
-  --line: rgba(21, 58, 64, .13);
-  --soft: #f1f5f0;
-  --width: min(1220px, calc(100% - 48px));
+  --line: var(--color-line);
+  --soft: var(--color-surface-soft);
+  --width: min(var(--container-page), calc(100% - (2 * var(--page-gutter))));
   overflow: hidden;
   color: var(--ink);
-  background:
-    radial-gradient(circle at 9% 9%, rgba(59, 197, 221, .105), transparent 24%),
-    radial-gradient(circle at 94% 20%, rgba(63, 150, 111, .045), transparent 24%),
-    var(--paper);
+  font-family: var(--font-sans);
+  background: var(--editorial-background);
 }
 
 .hero {
@@ -1172,7 +1170,7 @@ width: 12px;
 
 @media (max-width: 760px) {
   .page {
-    --width: min(100% - 30px, 1220px);
+    --width: min(100% - (2 * var(--page-gutter)), var(--container-page));
   }
 
   .hero {
@@ -1315,5 +1313,153 @@ width: 12px;
     align-items: flex-start;
     flex-direction: column;
     gap: 4px;
+  }
+}
+
+/* Padronizacao visual global - Etapa 1. */
+.kicker,
+.metrics span,
+.modeTabs button,
+.mapBaseSwitch button,
+.reframeButton,
+.dynamicLegend,
+.mapSourceLine,
+.panelEyebrow,
+.overviewStats dd,
+.selectionNote span,
+.selectionNoteStrong span,
+.selectionNoteStrong small,
+.territoryPanel > small,
+.sanitationAxes span,
+.mapInstruction span,
+.recoveryDetail span,
+.recoveryTotal span,
+.recoveryList b,
+.recoveryList small,
+.investmentSource,
+.investmentLead > span,
+.timelineTitle > span,
+.investmentRow > b,
+.investmentRow > span,
+.investmentRow > strong,
+.projectTimeline li > strong,
+.projectTimeline li > span,
+.goalTabs strong,
+.goalStatus,
+.detailLabel,
+.inlineTerms span,
+.inlineProducts span {
+  font-size: .75rem;
+}
+
+.sectionHeader {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 760px) {
+  .modeTabs button,
+  .mapBaseSwitch button,
+  .reframeButton,
+  .goalTabs button {
+    min-height: 44px;
+  }
+
+  .reframeButton {
+    min-width: 44px;
+  }
+}
+
+/* Padronizacao visual global - Etapa 2. */
+.hero {
+  padding: var(--page-entry-top) 0 30px;
+}
+
+.hero h1 {
+  font-size: var(--page-title-size);
+  line-height: var(--page-title-leading);
+  letter-spacing: var(--page-title-tracking);
+}
+
+.kicker {
+  margin-bottom: 10px;
+  font-size: var(--eyebrow-size);
+  font-weight: var(--eyebrow-weight);
+  line-height: var(--eyebrow-leading);
+  letter-spacing: var(--eyebrow-tracking);
+}
+
+.lead {
+  max-width: var(--container-reading);
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: var(--lead-size);
+  font-weight: var(--lead-weight);
+  line-height: var(--lead-leading);
+  letter-spacing: var(--lead-tracking);
+}
+
+.metaLine {
+  margin-top: 22px;
+  font-size: var(--meta-size);
+  font-weight: var(--meta-weight);
+  line-height: var(--meta-leading);
+  letter-spacing: var(--meta-tracking);
+}
+
+.territorySection,
+.executionSection,
+.goalsSection {
+  padding: 42px 0;
+}
+
+.sectionHeader {
+  gap: 52px;
+  margin-bottom: 24px;
+}
+
+.sectionHeader h2 {
+  font-size: var(--section-title-size);
+  font-weight: var(--section-title-weight);
+  line-height: var(--section-title-leading);
+  letter-spacing: var(--section-title-tracking);
+}
+
+.sectionHeader > p {
+  font-size: var(--body-size);
+  font-weight: var(--body-weight);
+  line-height: var(--body-leading);
+  letter-spacing: var(--body-tracking);
+}
+
+.modeTabs button,
+.mapBaseSwitch button,
+.reframeButton,
+.goalTabs button {
+  min-height: 40px;
+  border-radius: var(--radius-control);
+}
+
+.mapBaseSwitch {
+  border-radius: calc(var(--radius-control) + 2px);
+}
+
+@media (max-width: 760px) {
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 28px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.4rem, 11vw, 3.45rem);
+  }
+
+  .territorySection,
+  .executionSection,
+  .goalsSection {
+    padding-block: 36px;
+  }
+
+  .sectionHeader {
+    gap: 12px;
   }
 }
