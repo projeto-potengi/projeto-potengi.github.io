@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowRight, Instagram } from "lucide-react";
 import HomeArchiveShowcase from "@/src/components/HomeArchiveShowcase";
 import HomeWebgisPreview from "@/src/components/HomeWebgisPreview";
+import { documentCatalog } from "@/src/data/documents";
 import { staticMaps } from "@/src/data/maps";
 import { records } from "@/src/data/records";
 import { formatHectares, recoveryAreas, recoveryTotalHectares } from "@/src/data/project";
@@ -11,7 +12,7 @@ import { formatHectares, recoveryAreas, recoveryTotalHectares } from "@/src/data
 const indicators = [
   {
     value: "7",
-    label: "metas integradas",
+    label: "metas",
     description: "Do diagnóstico territorial à comunicação social."
   },
   {
@@ -27,7 +28,7 @@ const indicators = [
   {
     value: formatHectares(recoveryTotalHectares),
     label: "recuperação ambiental",
-    description: "Resultado integrado das quatro áreas trabalhadas."
+    description: "Nas quatro áreas trabalhadas pelo projeto."
   }
 ];
 
@@ -63,16 +64,26 @@ function uniqueById<T extends { id: string }>(items: T[]) {
   return Array.from(new Map(items.map((item) => [item.id, item])).values());
 }
 
-const preferredMap = staticMaps.find((item) => item.id === "vulnerabilidade-erosao-potengi");
-const mapHighlights = uniqueById([...(preferredMap ? [preferredMap] : []), ...staticMaps])
+const homeMapIds = [
+  "vulnerabilidade-erosao",
+  "areas-prioritarias",
+  "uso-cobertura-terra",
+  "agua-indice-seguranca-hidrica",
+  "drenagem-vulnerabilidade-apps"
+];
+
+const mapHighlights = homeMapIds
+  .map((id) => staticMaps.find((item) => item.id === id))
+  .filter(Boolean) as typeof staticMaps;
+
+const curatedMapHighlights = mapHighlights
   .filter((item) => Boolean(item.localAsset))
-  .slice(0, 5)
   .map((item) => ({
     id: item.id,
     title: itemTitle(item as typeof item & Record<string, unknown>),
     src: item.localAsset as string,
     alt: item.altText ?? "Mapa temático da Bacia do Rio Potengi",
-    meta: "Produto cartográfico produzido no âmbito do Projeto Potengi."
+    meta: item.theme
   }));
 
 // Curadoria da Home baseada no catálogo real de registros do projeto.
@@ -120,6 +131,34 @@ const recordHighlights = uniqueById([...preferredRecords, ...fallbackRecords])
     alt: item.altText ?? "Registro fotográfico do Projeto Potengi",
     meta: recordMeta(item as typeof item & Record<string, unknown>)
   }));
+
+function countDocuments(category: string) {
+  return documentCatalog.items.filter((item) => item.category.toLocaleLowerCase("pt-BR") === category.toLocaleLowerCase("pt-BR")).length;
+}
+
+const documentSummary = [
+  { label: "documentos públicos", value: documentCatalog.items.length },
+  { label: "produções acadêmicas", value: documentCatalog.items.filter((item) => item.group === "producao_academica").length },
+  { label: "relatórios de campo", value: documentCatalog.items.filter((item) => item.group === "relatorios_de_campo").length },
+  { label: "materiais educativos", value: documentCatalog.items.filter((item) => item.group === "materiais_educativos").length }
+];
+
+const academicSummary = [
+  { label: "artigos em periódicos", value: countDocuments("artigo em periódico") },
+  { label: "dissertações de mestrado", value: countDocuments("dissertação de mestrado") },
+  { label: "trabalhos de conclusão de curso", value: countDocuments("Trabalho de Conclusão de Curso") },
+  { label: "trabalhos em eventos", value: countDocuments("trabalho em evento") },
+  { label: "livro / e-book", value: countDocuments("livro / e-book") }
+];
+
+const otherDocumentSummary = [
+  { label: "documentos de comunicação social", value: documentCatalog.items.filter((item) => item.group === "comunicacao_social").length },
+  { label: "documentos de recuperação ambiental / PRADs", value: documentCatalog.items.filter((item) => item.group === "recuperacao_ambiental").length },
+  { label: "relatórios técnicos", value: documentCatalog.items.filter((item) => item.group === "relatorios_tecnicos").length },
+  { label: "plano de monitoramento", value: documentCatalog.items.filter((item) => item.group === "monitoramento").length }
+];
+
+const featuredBook = documentCatalog.items.find((item) => item.category === "livro / e-book");
 
 const hectareKeys = ["hectares", "areaHectares", "recoveredHectares", "hectaresRecovered", "areaHa", "ha"];
 
@@ -357,7 +396,14 @@ export default function Home() {
           <p className="rpf-kicker">Mapas, registros e documentos</p>
           <h2 id="rpf-archive-title">Explore o acervo do projeto</h2>
         </header>
-        <HomeArchiveShowcase maps={mapHighlights} records={recordHighlights} />
+        <HomeArchiveShowcase
+          maps={curatedMapHighlights}
+          records={recordHighlights}
+          documentSummary={documentSummary}
+          academicSummary={academicSummary}
+          otherDocumentSummary={otherDocumentSummary}
+          featuredBook={featuredBook ? { title: featuredBook.title, meta: `Publicação em destaque · ${featuredBook.year}` } : undefined}
+        />
       </section>
 
       <section className="rpf-brand-strip" aria-label="Instituições vinculadas ao Projeto Potengi">
