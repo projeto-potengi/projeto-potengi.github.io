@@ -1,34 +1,21 @@
 import type { Metadata } from "next";
-import CatalogBrowser from "@/src/components/CatalogBrowser";
-import { documentFilters, documents, type DocumentItem } from "@/src/data/documents";
+import DocumentsLibrary from "@/src/components/DocumentsLibrary";
+import styles from "@/src/components/DocumentsLibrary.module.css";
 
 export const metadata: Metadata = {
   title: "Documentos | Projeto Potengi",
-  description: "Biblioteca técnica do Projeto Potengi."
+  description: "Biblioteca institucional do Projeto Potengi."
 };
 
 export default function DocumentsPage() {
   return (
-    <main className="page-main">
-      <section className="page-hero compact-hero">
-        <p className="eyebrow">Documentos</p>
-        <h1>Biblioteca técnica e institucional do Projeto Potengi.</h1>
-        <p className="lead">
-          Dezenove documentos individualizados, com links de acesso, formato, categoria, meta relacionada e estado
-          claro de acesso público.
-        </p>
+    <main className={`page-main ${styles.documentsPage}`}>
+      <section className={`${styles.hero} page-hero`}>
+        <h1>Documentos</h1>
+        <p>Consulte a produção acadêmica e o acervo público institucional do Projeto Potengi.</p>
       </section>
 
-      <CatalogBrowser<DocumentItem>
-        title="Biblioteca técnica"
-        description="Pesquise por título, autoria, resumo ou fonte e refine por meta, categoria, ano e formato."
-        searchLabel="Buscar documentos"
-        searchPlaceholder="Título, autoria, categoria, meta ou palavra-chave"
-        filters={documentFilters}
-        items={documents}
-        emptyTitle="Nenhum documento encontrado."
-        emptyMessage="Ajuste a busca ou remova algum filtro para consultar os documentos publicados."
-      />
+      <DocumentsLibrary />
     </main>
   );
 }

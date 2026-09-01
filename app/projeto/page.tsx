@@ -69,7 +69,7 @@ export default function ProjetoPage() {
         <div className={styles.heroNarrative}>
           <p className={styles.kicker}>PROJETO</p>
           <h1 id="project-title">
-            Recuperação ambiental orientada por conhecimento técnico e leitura territorial.
+            Recuperação ambiental na Bacia do Rio Potengi
           </h1>
           <p className={styles.lead}>
             Pesquisa para desenvolvimento de ações de recuperação ambiental de áreas
