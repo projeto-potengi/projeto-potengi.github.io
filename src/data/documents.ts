@@ -9,7 +9,7 @@ export type DocumentCatalogItem = {
   category: string;
   format: string;
   meta: number[];
-  year: number;
+  year: number | null;
   authors: string[];
   vehicle: string | null;
   accessType: DocumentAccessType;

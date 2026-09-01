@@ -15,7 +15,9 @@ const categoryOptions = [...new Set(documentCatalog.items.map((item) => item.cat
   a.localeCompare(b, "pt-BR")
 );
 const metaOptions = [...new Set(documentCatalog.items.flatMap((item) => item.meta))].sort((a, b) => a - b);
-const yearOptions = [...new Set(documentCatalog.items.map((item) => item.year))].sort((a, b) => b - a);
+const yearOptions = [...new Set(documentCatalog.items.map((item) => item.year))]
+  .filter((year): year is number => year !== null)
+  .sort((a, b) => b - a);
 
 function DocumentCard({ item }: { item: DocumentCatalogItem }) {
   const hasAccess = Boolean(item.accessUrl?.trim());

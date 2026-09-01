@@ -29,39 +29,38 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* Hero — estrutura própria da página Projeto                         */
+/* Hero — escala de Resultados com composição própria da página       */
 /* ------------------------------------------------------------------ */
 
 .hero {
   width: var(--width);
   display: grid;
-  grid-template-columns: minmax(0, 1.42fr) minmax(320px, .58fr);
-  gap: 56px;
-  align-items: stretch;
+  grid-template-columns: minmax(0, 1.5fr) minmax(300px, .5fr);
+  gap: 48px;
+  align-items: start;
   margin: 0 auto;
-  padding: 48px 0 42px;
+  padding: 48px 0 27px;
   border-bottom: 1px solid var(--line);
 }
 
 .heroNarrative {
-  align-self: center;
   min-width: 0;
 }
 
 .heroNarrative h1 {
-  max-width: 900px;
+  max-width: 1080px;
   margin: 0;
   font-size: clamp(2.75rem, 4.35vw, 4.45rem);
   font-weight: 850;
-  letter-spacing: -.052em;
-  line-height: .96;
+  letter-spacing: -.055em;
+  line-height: .93;
 }
 
 .lead {
-  max-width: 760px;
-  margin: 18px 0 0;
-  color: #526f74;
-  font-size: clamp(1rem, 1.28vw, 1.15rem);
+  max-width: 770px;
+  margin: 17px 0 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.25vw, 1.12rem);
   line-height: 1.55;
 }
 
@@ -69,56 +68,56 @@
   position: relative;
   overflow: hidden;
   display: grid;
-  align-content: end;
-  min-height: 370px;
-  padding: 30px 28px 28px;
+  align-content: start;
+  min-height: 320px;
+  padding: 118px 25px 24px;
   color: #fff;
   background:
-    radial-gradient(circle at 105% -5%, rgba(214,170,34,.20), transparent 34%),
+    radial-gradient(circle at 105% -5%, rgba(214,170,34,.18), transparent 34%),
     linear-gradient(150deg, #174e53, #103b41 72%);
-  box-shadow: 0 18px 42px rgba(21,58,64,.09);
+  box-shadow: 0 14px 34px rgba(21,58,64,.08);
 }
 
 .heroDossier::after {
   content: "";
   position: absolute;
-  right: -72px;
-  bottom: -102px;
-  width: 250px;
-  height: 250px;
+  right: -78px;
+  bottom: -108px;
+  width: 240px;
+  height: 240px;
   border: 1px solid rgba(255,255,255,.07);
   border-radius: 50%;
 }
 
 .dossierMark {
   position: absolute;
-  top: 27px;
-  right: 25px;
+  top: 18px;
+  right: 23px;
   display: grid;
   justify-items: end;
-  color: rgba(255,255,255,.12);
+  color: rgba(255,255,255,.09);
   line-height: .78;
 }
 
 .dossierMark span {
-  font-size: 2.45rem;
+  font-size: 2.1rem;
   font-weight: 850;
   letter-spacing: -.05em;
 }
 
 .dossierMark strong {
-  font-size: 3.15rem;
+  font-size: 2.7rem;
   letter-spacing: -.06em;
 }
 
 .heroDossier > p {
   position: relative;
   z-index: 2;
-  max-width: 300px;
-  margin: 0 0 22px;
+  max-width: 280px;
+  margin: 0 0 18px;
   color: rgba(255,255,255,.72);
-  font-size: .78rem;
-  line-height: 1.52;
+  font-size: .76rem;
+  line-height: 1.5;
 }
 
 .heroDossier dl {
@@ -130,9 +129,9 @@
 
 .heroDossier dl > div {
   display: grid;
-  grid-template-columns: 105px minmax(0, 1fr);
-  gap: 13px;
-  padding: 10px 0;
+  grid-template-columns: 98px minmax(0, 1fr);
+  gap: 12px;
+  padding: 8px 0;
   border-top: 1px solid rgba(255,255,255,.12);
 }
 
@@ -1608,7 +1607,7 @@
 
 /* Padronizacao visual global - Etapa 2. */
 .hero {
-  padding: var(--page-entry-top) 0 40px;
+  padding: var(--page-entry-top) 0 30px;
 }
 
 .heroNarrative h1 {
@@ -1679,7 +1678,7 @@
 @media (max-width: 760px) {
   .hero {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 28px;
   }
 
   .heroNarrative h1 {
