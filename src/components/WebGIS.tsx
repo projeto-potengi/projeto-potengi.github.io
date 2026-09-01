@@ -459,7 +459,7 @@ export default function WebGIS() {
       vector?.setVisible(false);
       return;
     }
-    raster?.setVisible(false);
+    overviewRasterLayers.current[id]?.setVisible(false);
     vector?.setVisible(desired && Boolean(vector.getSource()?.getFeatures().length));
   }, []);
 

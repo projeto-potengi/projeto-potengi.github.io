@@ -184,8 +184,10 @@ export default function ProjectTerritoryJourneyV3() {
     if (nextStage === "bacia") {
       const source = basinSourceRef.current;
       if (!source || source.getFeatures().length === 0) return;
+      const extent = source.getExtent();
+      if (!extent) return;
 
-      view.fit(source.getExtent(), {
+      view.fit(extent, {
         padding: [54, 62, 54, 62],
         maxZoom: 9.5,
         duration
@@ -196,7 +198,9 @@ export default function ProjectTerritoryJourneyV3() {
     if (nextStage === "rn") {
       const source = rnSourceRef.current;
       if (source && source.getFeatures().length > 0) {
-        view.fit(source.getExtent(), {
+        const extent = source.getExtent();
+        if (!extent) return;
+        view.fit(extent, {
           padding: [56, 64, 56, 64],
           maxZoom: 7.4,
           duration
@@ -219,7 +223,9 @@ export default function ProjectTerritoryJourneyV3() {
     if (nextStage === "nordeste") {
       const source = northeastSourceRef.current;
       if (source && source.getFeatures().length > 0) {
-        view.fit(source.getExtent(), {
+        const extent = source.getExtent();
+        if (!extent) return;
+        view.fit(extent, {
           padding: [48, 58, 48, 58],
           maxZoom: 5.2,
           duration
@@ -420,7 +426,9 @@ export default function ProjectTerritoryJourneyV3() {
 
     basinSource.once("featuresloadend", () => {
       // O centro da referência passa a ser o CENTRO DA BACIA, não o centro do RN.
-      const basinCenter = getCenter(basinSource.getExtent());
+      const extent = basinSource.getExtent();
+      if (!extent) return;
+      const basinCenter = getCenter(extent);
       basinPointSource.clear();
       basinPointSource.addFeature(
         new Feature({

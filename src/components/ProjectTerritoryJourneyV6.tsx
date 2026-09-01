@@ -192,6 +192,7 @@ function municipalitiesIntersectingBasin(
   if (!basinFeatures.length) return [];
 
   const basinExtent = basinSource.getExtent();
+  if (!basinExtent) return [];
   const basinSamples = basinFeatures.flatMap((feature) =>
     sampledCoordinates(feature, 180)
   );
@@ -320,8 +321,10 @@ export default function ProjectTerritoryJourneyV6() {
     if (nextStage === "bacia") {
       const source = basinSourceRef.current;
       if (!source || source.getFeatures().length === 0) return;
+      const extent = source.getExtent();
+      if (!extent) return;
 
-      view.fit(source.getExtent(), {
+      view.fit(extent, {
         padding: [52, 60, 52, 60],
         maxZoom: 9.5,
         duration
@@ -352,7 +355,9 @@ export default function ProjectTerritoryJourneyV6() {
 
       const basinSource = basinSourceRef.current;
       if (basinSource?.getFeatures().length) {
-        view.fit(basinSource.getExtent(), {
+        const extent = basinSource.getExtent();
+        if (!extent) return;
+        view.fit(extent, {
           padding: [54, 68, 54, 68],
           maxZoom: 8.1,
           duration
@@ -364,7 +369,9 @@ export default function ProjectTerritoryJourneyV6() {
     if (nextStage === "rn") {
       const source = rnSourceRef.current;
       if (source && source.getFeatures().length > 0) {
-        view.fit(source.getExtent(), {
+        const extent = source.getExtent();
+        if (!extent) return;
+        view.fit(extent, {
           padding: [44, 54, 44, 54],
           maxZoom: 7.65,
           duration
@@ -386,7 +393,9 @@ export default function ProjectTerritoryJourneyV6() {
     if (nextStage === "nordeste") {
       const source = northeastSourceRef.current;
       if (source && source.getFeatures().length > 0) {
-        view.fit(source.getExtent(), {
+        const extent = source.getExtent();
+        if (!extent) return;
+        view.fit(extent, {
           padding: [38, 48, 38, 48],
           maxZoom: 5.35,
           duration
@@ -610,7 +619,9 @@ export default function ProjectTerritoryJourneyV6() {
     });
 
     basinSource.once("featuresloadend", () => {
-      const basinCenter = getCenter(basinSource.getExtent());
+      const extent = basinSource.getExtent();
+      if (!extent) return;
+      const basinCenter = getCenter(extent);
       basinPointSource.clear();
       basinPointSource.addFeature(
         new Feature({ geometry: new Point(basinCenter) })

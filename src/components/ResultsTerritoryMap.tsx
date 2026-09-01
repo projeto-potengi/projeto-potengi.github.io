@@ -129,7 +129,7 @@ export default function ResultsTerritoryMap() {
   const [selectedRecovery, setSelectedRecovery] = useState<string | null>(null);
 
   const fitExtent = (
-    extent: number[],
+    extent: number[] | null,
     maxZoom = 10.5,
     padding: [number, number, number, number] = [54, 66, 56, 66]
   ) => {

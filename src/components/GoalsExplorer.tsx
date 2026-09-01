@@ -51,7 +51,7 @@ export default function GoalsExplorer() {
         </div>
         <div className="goal-evidence">
           <FileText size={18} />
-          <span>{activeGoal.evidence}</span>
+          <span>{activeGoal.products.join(" · ")}</span>
         </div>
         <div className="goal-catalog-links" aria-label={`Evidências da ${activeMeta}`}>
           <CatalogLinkGroup title="Documentos" href="/documentos" icon={FileText} items={relatedDocuments.map((item) => item.title)} />

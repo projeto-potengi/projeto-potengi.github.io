@@ -167,8 +167,10 @@ export default function ProjectTerritoryJourney() {
     if (nextStage === "bacia") {
       const source = basinSourceRef.current;
       if (!source || source.getFeatures().length === 0) return;
+      const extent = source.getExtent();
+      if (!extent) return;
 
-      view.fit(source.getExtent(), {
+      view.fit(extent, {
         padding: [54, 62, 54, 62],
         maxZoom: 9.5,
         duration
@@ -179,7 +181,9 @@ export default function ProjectTerritoryJourney() {
     if (nextStage === "rn") {
       const source = rnSourceRef.current;
       if (source && source.getFeatures().length > 0) {
-        view.fit(source.getExtent(), {
+        const extent = source.getExtent();
+        if (!extent) return;
+        view.fit(extent, {
           padding: [56, 64, 56, 64],
           maxZoom: 7.4,
           duration
@@ -337,6 +341,7 @@ export default function ProjectTerritoryJourney() {
 
     rnSource.once("featuresloadend", () => {
       const extent = rnSource.getExtent();
+      if (!extent) return;
       locatorSource.clear();
       locatorSource.addFeature(
         new Feature({
