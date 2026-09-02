@@ -224,11 +224,6 @@ const institutionalBrands = [
     src: "/media/home/brands/midr.png",
     alt: "Ministério da Integração e do Desenvolvimento Regional"
   },
-  {
-    key: "semarh",
-    src: "/media/home/brands/semarh-rn.png",
-    alt: "Secretaria do Meio Ambiente e dos Recursos Hídricos do Rio Grande do Norte"
-  }
 ];
 
 export default function Home() {

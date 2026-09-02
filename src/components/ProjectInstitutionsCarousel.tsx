@@ -24,12 +24,6 @@ const institutions = [
     logo: "/media/home/brands/midr.png",
     url: "https://www.gov.br/mdr/pt-br"
   },
-  {
-    name: "Secretaria de Estado do Meio Ambiente e dos Recursos Hídricos",
-    short: "SEMARH-RN",
-    logo: "/media/home/brands/semarh-rn.png",
-    url: "http://www.semarh.rn.gov.br"
-  }
 ];
 
 export default function ProjectInstitutionsCarousel() {

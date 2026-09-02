@@ -6174,7 +6174,6 @@ th {
 .rpf-brand-logo-ufrn { width:170px; height:58px; }
 .rpf-brand-logo-funpec { width:170px; height:60px; }
 .rpf-brand-logo-midr { width:165px; height:56px; }
-.rpf-brand-logo-semarh { width:145px; height:72px; }
 
 .rpf-brand-instagram { display:flex; align-items:center; gap:10px; padding-left:24px; border-left:1px solid var(--rpf-line); }
 .rpf-brand-instagram img { width:42px; height:42px; object-fit:contain; }
@@ -6259,7 +6258,6 @@ th {
   .rpf-doc-gallery figure { width:42%; max-width:150px; }
   .rpf-doc-copy { padding:22px 20px; }
   .rpf-brand-logo-ufrn,.rpf-brand-logo-funpec,.rpf-brand-logo-midr { width:135px; }
-  .rpf-brand-logo-semarh { width:120px; }
 }
 
 /* WebGIS institucional — implementação dirigida pelo catálogo público */
@@ -7085,7 +7083,6 @@ th {
 .rpf-brand-logo-ufrn { width:168px; height:54px; }
 .rpf-brand-logo-funpec { width:175px; height:58px; }
 .rpf-brand-logo-midr { width:180px; height:58px; }
-.rpf-brand-logo-semarh { width:142px; height:76px; }
 
 .rpf-brand-instagram {
   display:grid;
@@ -7139,7 +7136,7 @@ th {
   .rpf-recovery-gallery { min-height:520px; }
   .rpf-recovery-copy { padding:30px 28px; }
   .rpf-brand-strip-inner { grid-template-columns:1fr; gap:20px; }
-  .rpf-brand-logos { grid-template-columns:repeat(5,minmax(0,1fr)); }
+  .rpf-brand-logos { grid-template-columns:repeat(3,minmax(0,1fr)); }
   .rpf-brand-instagram { max-width:390px; }
 }
 
@@ -7164,7 +7161,6 @@ th {
   .rpf-brand-logos { grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px 20px; }
   .rpf-brand-logo-potengi { grid-column:1/-1; }
   .rpf-brand-logo-ufrn,.rpf-brand-logo-funpec,.rpf-brand-logo-midr { width:135px; }
-  .rpf-brand-logo-semarh { width:118px; }
   .rpf-brand-instagram { grid-template-columns:48px 1fr auto; padding:15px; }
   .rpf-brand-instagram img { width:44px; height:44px; }
 }
@@ -7740,7 +7736,7 @@ th {
 }
 
 .rpf-brand-logos {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-items: center;
   gap: clamp(30px, 5vw, 72px);
 }
